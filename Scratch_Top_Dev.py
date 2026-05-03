@@ -10,7 +10,7 @@ list_your_role_responsibilities_all=[] # chứa thông tin về mô tả công v
 list_Your_skills_qualifications_all=[] # chứa thông tin về kỹ năng và yêu cầu
 list_Benefits_all=[] # chứa thông tin về quyền lợi
 list_positions_all=[] # chứa thông tin về vị trí ứng tuyển
-list_search=["Software+Engineer", "Data+Scientist","Data+Science","AI+Engineer","ML+Engineer","Scurity","BA","DA","QA"]
+list_search=["Software+Engineer", "Data+Engineer","Data+Science","AI+Engineer","ML+Engineer","Security","BA","DA","QA"]
 # danh sách tìm kiếm
 for i in list_search:
     url = f"https://topdev.vn/jobs/search?keyword={i}"  # url tìm kiếm theo từ khóa trong danh sách tren dev tp[]]
@@ -79,5 +79,5 @@ df= pd.DataFrame({
     "skills_qualifications": list_Your_skills_qualifications_all,
     "benefits": list_Benefits_all
 })
-df.to_csv("jobs_dev_top_final.csv", index=False, encoding="utf-8")
+df.to_csv("jobs_dev_top_final.csv", index=False, encoding="utf-8-sig")
 print(df)
