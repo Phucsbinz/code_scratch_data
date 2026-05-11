@@ -57,7 +57,8 @@ for i in list_search:
             print(f"Page not found: {url2}")
         else:
             soup2 = BeautifulSoup(r2.text, "lxml")
-            level= soup2.find("span",class_="flex items-center gap-1 text-xs/[12px] font-medium text-text-500 md:text-sm")
+            board= soup2.find_all("span",class_="flex items-center gap-1 text-xs/[12px] font-medium text-text-500 md:text-sm")
+            level=board[1]
             job_name = soup2.find("a",class_="line-clamp-1 text-sm/[18px] font-semibold text-brand-500 md:line-clamp-1 md:text-base/[24px]")
             role_div = soup2.find_all("div", class_="prose-ul text-text-900 bg-[#F5F5F5] px-2 py-4 text-sm")
             role_div2 = soup2.find_all("div", class_="td-mb-2 td-ml-4 td-mt-4 td-flex td-items-center td-gap-2 lg:td-mb-5 lg:td-ml-20 lg:td-mt-8")
