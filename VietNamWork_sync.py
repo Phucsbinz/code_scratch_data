@@ -5,29 +5,12 @@ import time
 import random
 import os
 
-import requests
-
-# Cấu hình proxy từ ProxyNo1
+# Cấu hình proxy xoay tự động
 PROXY_DICT = {
-    "server": "http://hcmdc2.proxyno1.com:22405",
-    "username": "oapben",
-    "password": "PRtmtU0Q"
+    "server": "http://180.93.2.169:3130",
+    "username": "auberonatkins47281",
+    "password": "nzuzode4ntqwnw=="
 }
-
-def doi_ip():
-    api_key = "oKdc20j6I83tmZYxkxrECR1778242441"
-    url_reset = f"https://proxyno1.com/api/change-ip?api_key={api_key}"
-    try:
-        response = requests.get(url_reset)
-        result = response.json()
-        if result.get('status') == 'success':
-            print("Đang reset IP, vui lòng đợi 12s...")
-            time.sleep(12) # Quan trọng: Phải đợi để USB 4G nhận IP mới
-            print("Đã đổi IP thành công!")
-        else:
-            print(f"Chưa đổi được IP: {result.get('message')}")
-    except Exception as e:
-        print(f"Lỗi khi gọi API đổi IP: {e}")
 
 job_links=[]
 list_positions_all=[]
@@ -98,27 +81,8 @@ with sync_playwright() as p:
             except Exception:
                 # stealth plugin conflict → coi như hết trang
                 break
-    # --- Vòng 2: Scrape từng link, gọi API đổi IP mỗi 50 link ---
+    # --- Vòng 2: Scrape từng link ---
     for idx, link in enumerate(job_links, 1):
-        # Cập nhật: mỗi 50 link đóng browser cũ, gọi API đổi IP, mở lại
-        if idx == 1 or idx % 50 == 1:
-            if idx > 1:
-                context.close()
-                browser.close()
-                print("\n🔄 Gọi API để đổi IP mới qua ProxyNo1...")
-                doi_ip()
-            
-            print(f"\n🔄 Khởi động trình duyệt với proxy: {PROXY_DICT['server']}")
-            browser = p.chromium.launch(
-                headless=False,
-                proxy=PROXY_DICT
-            )
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-            )
-            page = context.new_page()
-            Stealth().use_sync(page)
-            page.route("**/*.{png,jpg,jpeg,gif,svg}", lambda route: route.abort())
         print(f"Đang lấy link thứ: [{idx}/{len(job_links)}]")
         try:
             page.goto(link, wait_until="domcontentloaded")
