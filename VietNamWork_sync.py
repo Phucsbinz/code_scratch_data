@@ -5,11 +5,11 @@ import time
 import random
 import os
 
-# Cấu hình proxy xoay tự động
+# Cấu hình proxy xoay tự động (Vui lòng điền proxy của bạn nếu cần)
 PROXY_DICT = {
-    "server": "http://180.93.2.169:3130",
-    "username": "auberonatkins47281",
-    "password": "nzuzode4ntqwnw=="
+    "server": "http://YOUR_PROXY_SERVER:PORT",
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD"
 }
 
 job_links=[]
