@@ -3,3 +3,11 @@ beautifulsoup4
 pandas
 googletrans==4.0.0-rc1
 lxml
+Markdown==3.10.2
+matplotlib==3.10.9
+numpy==2.3.5
+playwright==1.59.0
+playwright-stealth==2.0.3
+pywaffle==1.1.1
+seaborn==0.13.2
+squarify==0.4.4

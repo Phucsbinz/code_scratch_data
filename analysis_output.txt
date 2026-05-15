@@ -1,0 +1,1193 @@
+﻿================================================================================
+PART 1: SPECIAL CHARACTERS IN EACH COLUMN
+================================================================================
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_dev_top_final.csv (TopDev)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [job_name]
+    Special chars found: 11 unique
+      '-' (U+002D): 42 times
+      '(' (U+0028): 31 times
+      ')' (U+0029): 31 times
+      '/' (U+002F): 19 times
+      ',' (U+002C): 7 times
+      '&' (U+0026): 6 times
+      'ΓÇô' (U+2013): 4 times
+      '+' (U+002B): 4 times
+      '[' (U+005B): 4 times
+      ']' (U+005D): 4 times
+      ':' (U+003A): 1 times
+
+  Column: [level]
+    Special chars found: 1 unique
+      ',' (U+002C): 61 times
+
+  Column: [role_responsibilities]
+    Special chars found: 15 unique
+      ',' (U+002C): 456 times
+      '.' (U+002E): 279 times
+      '(' (U+0028): 75 times
+      ')' (U+0029): 75 times
+      ':' (U+003A): 44 times
+      '/' (U+002F): 42 times
+      '-' (U+002D): 37 times
+      '&' (U+0026): 32 times
+      ';' (U+003B): 18 times
+      'ΓÇª' (U+2026): 11 times
+      '~' (U+007E): 4 times
+      '%' (U+0025): 4 times
+      'ΓÇÖ' (U+2019): 3 times
+      'ΓÇô' (U+2013): 3 times
+      '"' (U+0022): 2 times
+
+  Column: [skills_qualifications]
+    Special chars found: 21 unique
+      ',' (U+002C): 547 times
+      '.' (U+002E): 401 times
+      ':' (U+003A): 147 times
+      '(' (U+0028): 131 times
+      ')' (U+0029): 131 times
+      '/' (U+002F): 95 times
+      '-' (U+002D): 88 times
+      'ΓÇô' (U+2013): 18 times
+      '+' (U+002B): 17 times
+      '&' (U+0026): 14 times
+      'ΓÇÖ' (U+2019): 12 times
+      'ΓÇª' (U+2026): 11 times
+      ';' (U+003B): 7 times
+      '"' (U+0022): 6 times
+      '#' (U+0023): 3 times
+      'ΓÇö' (U+2014): 3 times
+      'ΓÇ£' (U+201C): 2 times
+      'ΓÇ¥' (U+201D): 2 times
+      '?' (U+003F): 2 times
+      '∩╝Å' (U+FF0F): 1 times
+      ''' (U+0027): 1 times
+
+  Column: [benefits]
+    Special chars found: 20 unique
+      ',' (U+002C): 352 times
+      '.' (U+002E): 226 times
+      ':' (U+003A): 90 times
+      '-' (U+002D): 81 times
+      '/' (U+002F): 51 times
+      '(' (U+0028): 48 times
+      ')' (U+0029): 48 times
+      '&' (U+0026): 29 times
+      ';' (U+003B): 26 times
+      'ΓÇô' (U+2013): 20 times
+      '+' (U+002B): 14 times
+      'ΓåÆ' (U+2192): 9 times
+      'ΓÇª' (U+2026): 8 times
+      '%' (U+0025): 4 times
+      '"' (U+0022): 4 times
+      ''' (U+0027): 3 times
+      '!' (U+0021): 2 times
+      'ΓÇÖ' (U+2019): 2 times
+      '?' (U+003F): 2 times
+      '~' (U+007E): 1 times
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_itviec_final.csv (ITviec)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [job_name]
+    Special chars found: 20 unique
+      '(' (U+0028): 249 times
+      ')' (U+0029): 249 times
+      ',' (U+002C): 233 times
+      '/' (U+002F): 158 times
+      '-' (U+002D): 70 times
+      '&' (U+0026): 31 times
+      '+' (U+002B): 21 times
+      '[' (U+005B): 11 times
+      ']' (U+005D): 11 times
+      '.' (U+002E): 11 times
+      '$' (U+0024): 10 times
+      'ΓÇô' (U+2013): 6 times
+      '╠ú' (U+0323): 3 times
+      '~' (U+007E): 2 times
+      '|' (U+007C): 2 times
+      '#' (U+0023): 2 times
+      'ΓÇÖ' (U+2019): 1 times
+      '╠â' (U+0303): 1 times
+      '╠Ç' (U+0300): 1 times
+      '╠ü' (U+0301): 1 times
+
+  Column: [position]
+    Special chars found: 1 unique
+      '-' (U+002D): 271 times
+
+  Column: [skills]
+    Special chars found: 7 unique
+      '+' (U+002B): 46 times
+      '/' (U+002F): 22 times
+      '.' (U+002E): 14 times
+      '-' (U+002D): 12 times
+      '#' (U+0023): 7 times
+      ',' (U+002C): 3 times
+      '&' (U+0026): 3 times
+
+  Column: [domain_company]
+    Special chars found: 2 unique
+      ',' (U+002C): 8 times
+      '&' (U+0026): 7 times
+
+  Column: [three_reasons_join_company]
+    Special chars found: 28 unique
+      ',' (U+002C): 263 times
+      '-' (U+002D): 98 times
+      '&' (U+0026): 94 times
+      '.' (U+002E): 51 times
+      '+' (U+002B): 51 times
+      '/' (U+002F): 46 times
+      '(' (U+0028): 19 times
+      ')' (U+0029): 19 times
+      ';' (U+003B): 17 times
+      '"' (U+0022): 14 times
+      '%' (U+0025): 11 times
+      ':' (U+003A): 9 times
+      'ΓÇÖ' (U+2019): 7 times
+      'ΓÇö' (U+2014): 6 times
+      '!' (U+0021): 5 times
+      ''' (U+0027): 4 times
+      '╠ú' (U+0323): 4 times
+      '$' (U+0024): 3 times
+      'ΓÇª' (U+2026): 3 times
+      'ΓÇ£' (U+201C): 2 times
+      'ΓÇ¥' (U+201D): 2 times
+      '≡ƒî₧' (U+1F31E): 2 times
+      '≡ƒÆ▓' (U+1F4B2): 2 times
+      'Γ₧í' (U+27A1): 2 times
+      '∩╕Å' (U+FE0F): 2 times
+      '?' (U+003F): 2 times
+      '*' (U+002A): 1 times
+      '~' (U+007E): 1 times
+
+  Column: [description_of_work]
+    Special chars found: 46 unique
+      ',' (U+002C): 5647 times
+      '.' (U+002E): 3336 times
+      '-' (U+002D): 1478 times
+      ')' (U+0029): 836 times
+      '(' (U+0028): 824 times
+      ':' (U+003A): 792 times
+      '/' (U+002F): 609 times
+      '&' (U+0026): 343 times
+      'ΓÇó' (U+2022): 207 times
+      'ΓÇö' (U+2014): 156 times
+      ''' (U+0027): 145 times
+      'ΓÇÖ' (U+2019): 130 times
+      '"' (U+0022): 126 times
+      ';' (U+003B): 78 times
+      '+' (U+002B): 69 times
+      'ΓÇô' (U+2013): 63 times
+      'ΓåÆ' (U+2192): 60 times
+      'ΓÇª' (U+2026): 42 times
+      '%' (U+0025): 37 times
+      '?' (U+003F): 36 times
+      'ΓùÅ' (U+25CF): 22 times
+      'ΓÇæ' (U+2011): 20 times
+      '*' (U+002A): 15 times
+      '┬╖' (U+00B7): 14 times
+      '!' (U+0021): 10 times
+      'ΓÇ£' (U+201C): 10 times
+      'ΓÇ¥' (U+201D): 10 times
+      'ΓÇÉ' (U+2010): 8 times
+      '$' (U+0024): 6 times
+      'ΓÇï' (U+200B): 6 times
+
+  Column: [requirements]
+    Special chars found: 48 unique
+      ',' (U+002C): 5431 times
+      '.' (U+002E): 3270 times
+      '-' (U+002D): 1882 times
+      ':' (U+003A): 1110 times
+      '(' (U+0028): 1098 times
+      ')' (U+0029): 1097 times
+      '/' (U+002F): 1096 times
+      '+' (U+002B): 319 times
+      'ΓÇó' (U+2022): 212 times
+      '&' (U+0026): 193 times
+      ';' (U+003B): 129 times
+      'ΓÇÖ' (U+2019): 123 times
+      'ΓÇö' (U+2014): 101 times
+      'ΓÇô' (U+2013): 92 times
+      'ΓÇª' (U+2026): 79 times
+      'ΓùÅ' (U+25CF): 53 times
+      '"' (U+0022): 51 times
+      ''' (U+0027): 50 times
+      '┬╖' (U+00B7): 37 times
+      '?' (U+003F): 29 times
+      '*' (U+002A): 20 times
+      '%' (U+0025): 18 times
+      'ΓëÑ' (U+2265): 16 times
+      '#' (U+0023): 16 times
+      'ΓÇ£' (U+201C): 12 times
+      'ΓÇ¥' (U+201D): 12 times
+      'ΓÇæ' (U+2011): 10 times
+      '[' (U+005B): 6 times
+      ']' (U+005D): 6 times
+      '>' (U+003E): 6 times
+
+  Column: [reason_you_like_to_work]
+    Special chars found: 66 unique
+      ',' (U+002C): 3282 times
+      '.' (U+002E): 2043 times
+      ':' (U+003A): 975 times
+      '-' (U+002D): 897 times
+      '(' (U+0028): 445 times
+      ')' (U+0029): 445 times
+      '/' (U+002F): 321 times
+      '&' (U+0026): 312 times
+      ';' (U+003B): 172 times
+      'ΓÇô' (U+2013): 125 times
+      '+' (U+002B): 114 times
+      ''' (U+0027): 106 times
+      'ΓÇª' (U+2026): 100 times
+      'ΓÇó' (U+2022): 90 times
+      'ΓÇÖ' (U+2019): 83 times
+      '%' (U+0025): 53 times
+      '!' (U+0021): 31 times
+      '"' (U+0022): 28 times
+      '?' (U+003F): 27 times
+      'ΓÇö' (U+2014): 21 times
+      '╠Ç' (U+0300): 19 times
+      'ΓÇ£' (U+201C): 17 times
+      'ΓÇ¥' (U+201D): 17 times
+      '$' (U+0024): 16 times
+      'ΓÇæ' (U+2011): 16 times
+      '╠ú' (U+0323): 15 times
+      'ΓÇÿ' (U+2018): 13 times
+      '#' (U+0023): 12 times
+      '∩╕Å' (U+FE0F): 12 times
+      'Γùª' (U+25E6): 10 times
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks.csv (VietnamWorks_sync)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [Job Title]
+    Special chars found: 20 unique
+      '(' (U+0028): 658 times
+      ')' (U+0029): 655 times
+      '-' (U+002D): 439 times
+      '/' (U+002F): 283 times
+      ',' (U+002C): 157 times
+      '&' (U+0026): 135 times
+      '.' (U+002E): 75 times
+      '+' (U+002B): 59 times
+      '[' (U+005B): 57 times
+      ']' (U+005D): 57 times
+      'ΓÇô' (U+2013): 39 times
+      '|' (U+007C): 20 times
+      '$' (U+0024): 15 times
+      ':' (U+003A): 14 times
+      '#' (U+0023): 5 times
+      '*' (U+002A): 4 times
+      '%' (U+0025): 3 times
+      '~' (U+007E): 1 times
+      'ΓÇæ' (U+2011): 1 times
+      '∩╝ë' (U+FF09): 1 times
+
+  Column: [Skills]
+    Special chars found: 10 unique
+      ',' (U+002C): 5469 times
+      '+' (U+002B): 108 times
+      '-' (U+002D): 86 times
+      '/' (U+002F): 57 times
+      '&' (U+0026): 57 times
+      '.' (U+002E): 45 times
+      '#' (U+0023): 27 times
+      '(' (U+0028): 13 times
+      ')' (U+0029): 13 times
+      ':' (U+003A): 2 times
+
+  Column: [Description]
+    Special chars found: 73 unique
+      ',' (U+002C): 21316 times
+      '.' (U+002E): 14483 times
+      'ΓÇó' (U+2022): 8272 times
+      '-' (U+002D): 7797 times
+      ')' (U+0029): 3305 times
+      '(' (U+0028): 3243 times
+      ':' (U+003A): 3193 times
+      '/' (U+002F): 2657 times
+      '&' (U+0026): 1436 times
+      ';' (U+003B): 890 times
+      'ΓÇô' (U+2013): 505 times
+      '+' (U+002B): 338 times
+      'ΓÇª' (U+2026): 338 times
+      'ΓÇÖ' (U+2019): 293 times
+      'ΓùÅ' (U+25CF): 242 times
+      '"' (U+0022): 221 times
+      ''' (U+0027): 183 times
+      '%' (U+0025): 160 times
+      '*' (U+002A): 153 times
+      'ΓÇæ' (U+2011): 98 times
+      'ΓåÆ' (U+2192): 85 times
+      'πÇü' (U+3001): 83 times
+      'ΓÇö' (U+2014): 77 times
+      'Γùª' (U+25E6): 65 times
+      '╠ü' (U+0301): 56 times
+      'ΓÇ¥' (U+201D): 53 times
+      '∩╝î' (U+FF0C): 53 times
+      'ΓÇ£' (U+201C): 52 times
+      'πÇé' (U+3002): 52 times
+      '∩╝Ü' (U+FF1A): 45 times
+
+  Column: [Requirement]
+    Special chars found: 67 unique
+      ',' (U+002C): 22535 times
+      '.' (U+002E): 13729 times
+      '-' (U+002D): 10900 times
+      'ΓÇó' (U+2022): 9803 times
+      ':' (U+003A): 4799 times
+      '/' (U+002F): 4141 times
+      ')' (U+0029): 3550 times
+      '(' (U+0028): 3529 times
+      ';' (U+003B): 1392 times
+      '+' (U+002B): 1133 times
+      '&' (U+0026): 889 times
+      'ΓÇô' (U+2013): 755 times
+      'ΓÇª' (U+2026): 462 times
+      'ΓÇÖ' (U+2019): 415 times
+      'ΓùÅ' (U+25CF): 400 times
+      '*' (U+002A): 318 times
+      ''' (U+0027): 147 times
+      '%' (U+0025): 125 times
+      '?' (U+003F): 109 times
+      '╠ü' (U+0301): 101 times
+      '"' (U+0022): 96 times
+      'Γùª' (U+25E6): 70 times
+      'ΓÇ£' (U+201C): 67 times
+      'ΓÇæ' (U+2011): 65 times
+      'ΓÇ¥' (U+201D): 64 times
+      '╠ú' (U+0323): 63 times
+      '~' (U+007E): 61 times
+      '#' (U+0023): 60 times
+      'ΓëÑ' (U+2265): 57 times
+      '╠Ç' (U+0300): 51 times
+
+  Column: [Level]
+    Special chars found: 1 unique
+      '/' (U+002F): 23 times
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks_async_parallel.csv (VietnamWorks_async)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [Job Title]
+    Special chars found: 29 unique
+      '(' (U+0028): 1437 times
+      ')' (U+0029): 1435 times
+      '-' (U+002D): 995 times
+      '/' (U+002F): 648 times
+      ',' (U+002C): 339 times
+      '&' (U+0026): 263 times
+      '[' (U+005B): 152 times
+      ']' (U+005D): 152 times
+      '+' (U+002B): 102 times
+      'ΓÇô' (U+2013): 97 times
+      '.' (U+002E): 81 times
+      '|' (U+007C): 51 times
+      ':' (U+003A): 32 times
+      '$' (U+0024): 27 times
+      '%' (U+0025): 10 times
+      '#' (U+0023): 7 times
+      '*' (U+002A): 6 times
+      '~' (U+007E): 4 times
+      '!' (U+0021): 4 times
+      ';' (U+003B): 2 times
+      'ΓÇæ' (U+2011): 1 times
+      'ΓÇÖ' (U+2019): 1 times
+      ''' (U+0027): 1 times
+      'πâ╗' (U+30FB): 1 times
+      '╠ë' (U+0309): 1 times
+      '╠Ç' (U+0300): 1 times
+      '╠ú' (U+0323): 1 times
+      'ΓÇ£' (U+201C): 1 times
+      'ΓÇ¥' (U+201D): 1 times
+
+  Column: [Skills]
+    Special chars found: 12 unique
+      ',' (U+002C): 7249 times
+      '+' (U+002B): 100 times
+      '/' (U+002F): 78 times
+      '&' (U+0026): 76 times
+      '-' (U+002D): 75 times
+      '.' (U+002E): 40 times
+      '#' (U+0023): 24 times
+      '(' (U+0028): 13 times
+      ')' (U+0029): 13 times
+      ':' (U+003A): 7 times
+      '╠Ç' (U+0300): 2 times
+      '╠ü' (U+0301): 2 times
+
+  Column: [Description]
+    Special chars found: 86 unique
+      ',' (U+002C): 45702 times
+      '.' (U+002E): 33302 times
+      'ΓÇó' (U+2022): 18550 times
+      '-' (U+002D): 17137 times
+      ':' (U+003A): 6723 times
+      ')' (U+0029): 6430 times
+      '(' (U+0028): 6309 times
+      '/' (U+002F): 5920 times
+      '&' (U+0026): 3401 times
+      ';' (U+003B): 2490 times
+      'ΓÇô' (U+2013): 1134 times
+      'ΓÇª' (U+2026): 831 times
+      '*' (U+002A): 777 times
+      '+' (U+002B): 750 times
+      'ΓÇÖ' (U+2019): 677 times
+      'ΓùÅ' (U+25CF): 452 times
+      '%' (U+0025): 364 times
+      '"' (U+0022): 337 times
+      ''' (U+0027): 334 times
+      '╠ü' (U+0301): 312 times
+      '╠Ç' (U+0300): 277 times
+      '╠ú' (U+0323): 253 times
+      'πÇü' (U+3001): 191 times
+      '∩╝î' (U+FF0C): 168 times
+      'ΓÇæ' (U+2011): 162 times
+      '╠ë' (U+0309): 151 times
+      'πÇé' (U+3002): 133 times
+      'Γùª' (U+25E6): 128 times
+      'ΓÇö' (U+2014): 127 times
+      'ΓÇ¥' (U+201D): 122 times
+
+  Column: [Requirement]
+    Special chars found: 87 unique
+      ',' (U+002C): 41525 times
+      '.' (U+002E): 26994 times
+      '-' (U+002D): 20517 times
+      'ΓÇó' (U+2022): 19682 times
+      ':' (U+003A): 10050 times
+      '/' (U+002F): 7479 times
+      ')' (U+0029): 6044 times
+      '(' (U+0028): 6005 times
+      ';' (U+003B): 2943 times
+      '+' (U+002B): 1904 times
+      '&' (U+0026): 1830 times
+      'ΓÇô' (U+2013): 1570 times
+      'ΓÇª' (U+2026): 945 times
+      '*' (U+002A): 938 times
+      'ΓùÅ' (U+25CF): 758 times
+      'ΓÇÖ' (U+2019): 694 times
+      ''' (U+0027): 265 times
+      '%' (U+0025): 261 times
+      '╠Ç' (U+0300): 219 times
+      '╠ü' (U+0301): 178 times
+      '~' (U+007E): 153 times
+      '╠ú' (U+0323): 148 times
+      'πÇü' (U+3001): 143 times
+      '?' (U+003F): 141 times
+      '"' (U+0022): 136 times
+      'ΓÇæ' (U+2011): 112 times
+      '>' (U+003E): 94 times
+      'ΓÇ£' (U+201C): 91 times
+      '┬╖' (U+00B7): 90 times
+      '╠ë' (U+0309): 89 times
+
+  Column: [Level]
+    Special chars found: 1 unique
+      '/' (U+002F): 25 times
+
+
+================================================================================
+PART 2: UNIQUE VALUES IN KEY COLUMNS (for term normalization)
+================================================================================
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_dev_top_final.csv (TopDev)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [position] - unique values:
+    ΓÇó AI Engineer
+    ΓÇó BA
+    ΓÇó DA
+    ΓÇó Data Engineer
+    ΓÇó Data Science
+    ΓÇó ML Engineer
+    ΓÇó QA
+    ΓÇó Security
+    ΓÇó Software Engineer
+
+  Column: [level] - unique values:
+    ΓÇó Director
+    ΓÇó Fresher
+    ΓÇó Fresher, Intern, Junior, Middle, Senior
+    ΓÇó Fresher, Junior
+    ΓÇó Fresher, Junior, Middle, Senior
+    ΓÇó Fresher, Middle
+    ΓÇó Intern
+    ΓÇó Junior, Middle
+    ΓÇó Junior, Middle, Senior
+    ΓÇó Middle
+    ΓÇó Middle, Senior
+    ΓÇó Senior
+    ΓÇó Tr╞░ß╗ƒng Nh├│m
+    ΓÇó Tr╞░ß╗ƒng Nh├│m, Junior, Middle, Senior
+    ΓÇó Tr╞░ß╗ƒng Nh├│m, Senior
+    ΓÇó Tr╞░ß╗ƒng ph├▓ng
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_itviec_final.csv (ITviec)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [position] - unique values:
+    ΓÇó AI-Engineer
+    ΓÇó BA
+    ΓÇó DA
+    ΓÇó Data-Engineer
+    ΓÇó Data-Science
+    ΓÇó ML-Engineer
+    ΓÇó QA
+    ΓÇó Security
+    ΓÇó Software-Engineer
+
+  Column: [skills] - unique values (split by comma if applicable):
+    ΓÇó AI_PyTorch_Python_LLM_Data Science_Machine Learning (4)
+    ΓÇó Data Privacy / Compliance_Cloud Security_Data Quality Tools_Data Science (4)
+    ΓÇó AI_TensorFlow_PyTorch_Microservices_C++_Python (4)
+    ΓÇó Tester_Unit test_Automation Test_AI_API_QA QC (3)
+    ΓÇó Python_AI_Data Engineer_JSON_AWS_SQL (3)
+    ΓÇó Python_SQL_Cloud_AWS_Data Engineer_English (3)
+    ΓÇó AI_AWS_Kafka_SQL_Python_Java (3)
+    ΓÇó Python_Database_Machine Learning_AI_Linux_C++ (3)
+    ΓÇó Data Engineer_LLM_AI_English_Python_Data Science (3)
+    ΓÇó Python_DevOps_MySQL_Linux_Database_AI (3)
+    ΓÇó Spring Boot_Spring_Java (3)
+    ΓÇó AI_LLM_Python_Data Science_Machine Learning (3)
+    ΓÇó AI_NLP_Data Science_PyTorch_TensorFlow_Machine Learning (3)
+    ΓÇó Java_Golang_AI_Cloud_NodeJS_Python (2)
+    ΓÇó Software Architecture_ReactJS_NestJS_Cloud_DevOps_NodeJS (2)
+    ΓÇó Generative AI_Solution Architecture_English_Software Architecture_LLM_AI (2)
+    ΓÇó Java_GraphQL_AI_GCP_Azure_AWS (2)
+    ΓÇó C++_Embedded_AI (2)
+    ΓÇó QA QC_Automation Test_Team Management_Cucumber_Selenium_Tester (2)
+    ΓÇó QA QC_JavaScript_Java_Python_Tester_Automation Test (2)
+    ΓÇó Leadership_Machine Learning_AI_JavaScript_TypeScript_Python (2)
+    ΓÇó Software Architecture_AI_Angular_.NET_Microservices_Azure (2)
+    ΓÇó ERP_Leadership_DevOps_Odoo_Solution Architecture_AI (2)
+    ΓÇó Data Engineer_Google BigQuery_Google Cloud_Spark_SQL_Python (2)
+    ΓÇó Data Engineer_Data Warehousing_Data modeling_ETL_SQL_AWS (2)
+    ΓÇó Data Engineer_Power BI_Tableau_Business Intelligence_Cloud_Oracle (2)
+    ΓÇó Data Engineer_Networking_DevOps_Database_Cloud (2)
+    ΓÇó Data Engineer_MongoDB_PostgreSql_Apache Spark_Kafka_Spark (2)
+    ΓÇó Data Engineer_Databricks_Snowflake_Power BI_SQL_Python (2)
+    ΓÇó Data Engineer_Azure_AWS_ETL_Python_SQL (2)
+    ΓÇó Data Engineer_Databricks_Data Warehousing_Big Data_Database_MLOps (2)
+    ΓÇó T-SQL_Database_Data Engineer_Oracle_PostgreSql_ETL (2)
+    ΓÇó AWS_AWS Lambda_AWS Glue_Pandas_Python (2)
+    ΓÇó Apache Spark_Apache Airflow_Jenkins_CI/CD_Golang (2)
+    ΓÇó PostgreSql_GCP_Apache Spark_Kafka (2)
+    ΓÇó Python_ETL_AWS (2)
+    ΓÇó ELT_Python_PostgreSql_Oracle_Database_SQL (2)
+    ΓÇó Data Analysis_Business Intelligence_Stakeholder management_AI_Figma_UI-UX (2)
+    ΓÇó Generative AI_Python_SQL (2)
+    ΓÇó Big Data_AI_Data Science (2)
+    ΓÇó Data Science_Machine Learning_AI_IT Governance (2)
+    ΓÇó AI_Database_Data Science (2)
+    ΓÇó Data Analysis_SQL_AI_Looker_Power BI (2)
+    ΓÇó AI_Generative AI_Python_English_Data Science (2)
+    ΓÇó AI_Computer Vision_NLP_LLM_Data Science (2)
+    ΓÇó Python_PyTorch_TensorFlow_FastAPI_AI (2)
+    ΓÇó AI_Git_Docker_OCR_Python_Computer Vision (2)
+    ΓÇó AI_LLM_Deep Learning_Machine Learning_Computer Vision_NLP (2)
+    ΓÇó AI_Project Management_AWS_CI/CD_Machine Learning_MLOps (2)
+    ΓÇó AI_Generative AI_API_Machine Learning_JavaScript_Python (2)
+    ΓÇó AI_.NET_TypeScript_Python_Prompt Engineering_Machine Learning (2)
+    ΓÇó Python_C++_CI/CD_Computer Vision_Automation Test_AI (2)
+    ΓÇó MySQL_Data Analysis_AI_Business Analysis_Machine Learning_Blockchain (2)
+    ΓÇó AI_NLP_Deep Learning_Python_API_Machine Learning (2)
+    ΓÇó Java_Maven_AI_Spring_Oracle_SQL (2)
+    ΓÇó QA QC_Tester_AI_Automation Test_Java_API (2)
+    ΓÇó Business Analysis_OCR_LLM_Database_AI (2)
+    ΓÇó PQA_Automation Test_Playwright_Cypress_AI_QA QC (2)
+    ΓÇó Security_GCP_Blockchain_AI (2)
+    ΓÇó QA QC_Generative AI_Automation Test_Java_Tester_Team Management (2)
+    ΓÇó Business Analysis_Scrum_AI_Data Analysis_Project Management_Agile (2)
+    ΓÇó Business Analysis_API_Design Systems_Data modeling_AI_English (2)
+    ΓÇó Security_IT Governance_Governance (2)
+    ΓÇó Risk & Compliance_Cloud Security_Information Security (2)
+    ΓÇó Embedded C_RTOS (1)
+    ΓÇó Kotlin_Embedded Android (1)
+    ΓÇó Solution Architecture_Cloud_Java_Enterprise Architecture_Microservices Architecture_Software Architecture (1)
+    ΓÇó Golang_Leadership_Java_Python_NodeJS (1)
+    ΓÇó Embedded_English_Git_Linux_C language_C++ (1)
+    ΓÇó C++_Agile_Software Architecture_Git_RTOS_Embedded (1)
+    ΓÇó Mobile Apps_Flutter_Unity_iOS_Android_Team Management (1)
+    ΓÇó MySQL_Chinese_C#_JavaScript (1)
+    ΓÇó Software Architecture_Microservices_NodeJS_.NET_ReactJS_Java (1)
+    ΓÇó System Architecture_Leadership_Spring Boot_AWS_Java_Kotlin (1)
+    ΓÇó Embedded Android_Java_C++_Linux (1)
+    ΓÇó Golang_Kafka_Cloud_CI/CD_OOP (1)
+    ΓÇó English_Embedded C_Java_C++_Python (1)
+    ΓÇó Python_FastAPI_Django_Flask (1)
+    ΓÇó Java_API_English_SQL_Microservices_AWS (1)
+    ΓÇó Java_English_AWS_React Native_ReactJS_Fullstack (1)
+
+  Column: [domain_company] - unique values:
+    ΓÇó Dß╗ïch Vß╗Ñ v├á T╞░ Vß║Ñn IT (93)
+    ΓÇó Ng├ón H├áng (73)
+    ΓÇó Sß║ún Phß║⌐m Phß║ºn Mß╗üm v├á Dß╗ïch Vß╗Ñ Web (59)
+    ΓÇó Th╞░╞íng Mß║íi ─Éiß╗çn Tß╗¡ (22)
+    ΓÇó Thu├¬ Ngo├ái Ph├ít Triß╗ân Phß║ºn Mß╗üm (12)
+    ΓÇó Phß║ºn mß╗üm v├á Dß╗ïch vß╗Ñ Tr├¡ tuß╗ç Nh├ón tß║ío (10)
+    ΓÇó Tr├▓ Ch╞íi (9)
+    ΓÇó Vß║¡n Tß║úi (8)
+    ΓÇó Logistics v├á Kho H├áng (8)
+    ΓÇó B├ín Lß║╗ v├á B├ín Bu├┤n (8)
+    ΓÇó Dß╗ïch vß╗Ñ Blockchain & Web3 (7)
+    ΓÇó Viß╗àn Th├┤ng (7)
+    ΓÇó Bß║úo Hiß╗âm (6)
+    ΓÇó Phß║ºn Cß╗⌐ng v├á ─Éiß╗çn To├ín (5)
+    ΓÇó Du Lß╗ïch v├á Dß╗ïch Vß╗Ñ L╞░u Tr├║ (5)
+    ΓÇó Dß╗ïch Vß╗Ñ T├ái Ch├¡nh (5)
+    ΓÇó Sß║ún Xuß║Ñt v├á Kß╗╣ Thuß║¡t (4)
+    ΓÇó Chß╗⌐ng kho├ín v├á ─Éß║ºu t╞░ (3)
+    ΓÇó Gi├ío Dß╗Ñc v├á ─É├áo Tß║ío (3)
+    ΓÇó Ch─âm S├│c Sß╗⌐c Khß╗Åe (2)
+    ΓÇó S├íng Tß║ío v├á Thiß║┐t Kß║┐ (2)
+    ΓÇó Bß║Ñt ─Éß╗Öng Sß║ún v├á X├óy Dß╗▒ng (2)
+    ΓÇó An Ninh Mß║íng (2)
+    ΓÇó Mß║íng L╞░ß╗¢i v├á C╞í Sß╗ƒ Hß║í Tß║ºng (1)
+    ΓÇó Mua B├ín v├á Th╞░╞íng Mß║íi (1)
+    ΓÇó Thß╗▒c Phß║⌐m v├á ─Éß╗ô Uß╗æng (1)
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks.csv (VietnamWorks_sync)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [Position] - unique values:
+    ΓÇó AI Engineer
+    ΓÇó BA
+    ΓÇó DA
+    ΓÇó Data Engineer
+    ΓÇó Data Science
+    ΓÇó ML Engineer
+    ΓÇó QA
+    ΓÇó Security
+    ΓÇó Software Engineer
+
+  Column: [Skills] - unique values (split):
+    ΓÇó Ph├ón T├¡ch Dß╗» Liß╗çu (110)
+    ΓÇó SQL (108)
+    ΓÇó Python (102)
+    ΓÇó Deep Learning (87)
+    ΓÇó Data Analysis (76)
+    ΓÇó English (73)
+    ΓÇó AI (70)
+    ΓÇó Machine Learning (58)
+    ΓÇó Giao Tiß║┐p (52)
+    ΓÇó Project Management (45)
+    ΓÇó Power BI (44)
+    ΓÇó Java (41)
+    ΓÇó Business Analysis (41)
+    ΓÇó Data Science (41)
+    ΓÇó Ph├ón t├¡ch dß╗» liß╗çu (40)
+    ΓÇó Communication (37)
+    ΓÇó JavaScript (33)
+    ΓÇó Quß║ún L├╜ Dß╗▒ ├ün (33)
+    ΓÇó Business Intelligence (33)
+    ΓÇó Problem-solving (32)
+    ΓÇó Big Data (32)
+    ΓÇó Data Warehouse (32)
+    ΓÇó Python Programming (31)
+    ΓÇó Communication Skills (31)
+    ΓÇó C├┤ng Nghß╗ç Th├┤ng Tin (30)
+    ΓÇó Data Analytics (29)
+    ΓÇó Chuyß╗ân ─æß╗òi sß╗æ (28)
+    ΓÇó Business Development (27)
+    ΓÇó C# (26)
+    ΓÇó Docker (26)
+    ΓÇó Leadership (26)
+    ΓÇó C++ (25)
+    ΓÇó Tiß║┐ng Anh (25)
+    ΓÇó Ph├ón T├¡ch Nghiß╗çp Vß╗Ñ (23)
+    ΓÇó T├ái Ch├¡nh (23)
+    ΓÇó An To├án Th├┤ng Tin (23)
+    ΓÇó Analytical Skills (22)
+    ΓÇó SQL Server (21)
+    ΓÇó Technical Support (21)
+    ΓÇó Data Management (21)
+    ΓÇó Customer Service (21)
+    ΓÇó PyTorch (20)
+    ΓÇó TensorFlow (20)
+    ΓÇó Oracle (20)
+    ΓÇó Kinh Doanh (20)
+    ΓÇó AWS (20)
+    ΓÇó Kß║┐ To├ín (20)
+    ΓÇó Embedded (18)
+    ΓÇó AI Engineer (17)
+    ΓÇó PostgreSQL (17)
+    ΓÇó Computer Vision (17)
+    ΓÇó ETL (16)
+    ΓÇó C/C++ (15)
+    ΓÇó Product Management (15)
+    ΓÇó Nghi├¬n Cß╗⌐u Thß╗ï Tr╞░ß╗¥ng (15)
+    ΓÇó Microservices (14)
+    ΓÇó Cybersecurity (14)
+    ΓÇó Teamwork (14)
+    ΓÇó NoSQL (14)
+    ΓÇó ERP (14)
+    ΓÇó Risk Management (14)
+    ΓÇó Agile (13)
+    ΓÇó business analyst (13)
+    ΓÇó T╞░ Vß║Ñn Giß║úi Ph├íp (13)
+    ΓÇó Kiß╗âm To├ín (13)
+    ΓÇó Giß║úi Quyß║┐t Vß║Ñn ─Éß╗ü (13)
+    ΓÇó Network Security (13)
+    ΓÇó Excel (13)
+    ΓÇó Data Modeling (13)
+    ΓÇó English Fluency (12)
+    ΓÇó English Communication (12)
+    ΓÇó MariaDB (12)
+    ΓÇó Cloud Computing (12)
+    ΓÇó Banking (12)
+    ΓÇó Sales (12)
+    ΓÇó Stakeholder Management (12)
+    ΓÇó Kß║┐ To├ín Tß╗òng Hß╗úp (12)
+    ΓÇó MS Office (12)
+    ΓÇó Ph├ón T├¡ch Kinh Doanh (12)
+    ΓÇó Advanced SQL (12)
+
+  Column: [Level] - unique values:
+    ΓÇó Gi├ím ─Éß╗æc v├á Cß║Ñp Cao H╞ín
+    ΓÇó Mß╗¢i Tß╗æt Nghiß╗çp
+    ΓÇó Nh├ón vi├¬n
+    ΓÇó Thß╗▒c tß║¡p sinh/Sinh vi├¬n
+    ΓÇó Tr╞░ß╗ƒng ph├▓ng
+
+  Column: [Years of Experience] - unique values:
+    ΓÇó 1
+    ΓÇó 10
+    ΓÇó 12
+    ΓÇó 15
+    ΓÇó 2
+    ΓÇó 3
+    ΓÇó 4
+    ΓÇó 5
+    ΓÇó 6
+    ΓÇó 7
+    ΓÇó 8
+    ΓÇó Kh├┤ng hiß╗ân thß╗ï
+    ΓÇó Kh├┤ng y├¬u cß║ºu
+
+  Column: [Educational Level] - unique values:
+    ΓÇó Cao ─æß║│ng
+    ΓÇó Cß╗¡ nh├ón
+    ΓÇó Kh├┤ng giß╗¢i hß║ín
+    ΓÇó Thß║íc S─⌐
+    ΓÇó Trung cß║Ñp
+    ΓÇó Trung hß╗ìc
+
+  Column: [Job Title] - sample unique values (first 50):
+    ΓÇó (HCM/V─¿NH LONG/HUE) Kß╗╣ S╞░ Triß╗ân Khai Bß║ún Vß║╜ BIM (Hß╗ç Thß╗æng MEP/ HVAC)
+    ΓÇó (HN/HCM) Senior Automation/Manual Test
+    ΓÇó (HN/HCM) Senior Frontend Engineer (JavaScript (ES6+))
+    ΓÇó (JP 233) Kß╗╣ S╞░ MEP ╞»u Ti├¬n Kinh Nghiß╗çm REBLO / TFAS - Tß║ío Bß║ún Vß║╜ Dß╗» Liß╗çu CAD Hß╗ç Thß╗æng Th├┤ng Gi├│ Trong Nh├á Chung C╞░, Nh├á Cao Tß║ºng ─Éi Nhß║¡t Miß╗àn Ph├¡
+    ΓÇó (JP 233) Kß╗╣ S╞░ MEP: Tß║ío Bß║ún Vß║╜ Dß╗» Liß╗çu CAD Hß╗ç Thß╗æng Th├┤ng Gi├│ Trong Nh├á Chung C╞░, Nh├á Cao Tß║ºng
+    ΓÇó (JP 239) Kß╗╣ S╞░ Ph├ít Triß╗ân ß╗¿ng Dß╗Ñng VB.NET/Visual Studio - Deadline Tho├íng ─Éi Nhß║¡t Miß╗àn Ph├¡
+    ΓÇó (Middle, Senior) BackEnd Engineer (Java, Go) - Khß╗æi C├┤ng nghß╗ç th├┤ng tin (HOLT.11)
+    ΓÇó (Senior) Operations Data Analyst
+    ΓÇó (VN 216) Kß╗╣ S╞░ Ph├ít Triß╗ân Phß║ºn Mß╗üm Nh├║ng Matlab Simulink-Tiß║┐ng Nhß║¡t L╞░╞íng Cao-B├¼nh Thß║ính, HCM
+    ΓÇó (VN 235) Kß╗╣ S╞░ CAD Cß║ºu ─É╞░ß╗¥ng Xß╗¡ L├╜ 3D Dß╗» Liß╗çu ─É├ím M├óy, Dß╗» Liß╗çu ─Éo ─Éß║íc
+    ΓÇó (Viß╗çc l├ám V─⌐nh Long) Kß╗╣ S╞░ Triß╗ân Khai Bß║ún Vß║╜ X├óy Dß╗▒ng
+    ΓÇó (─Éß╗æng ─Éa, HN) Nh├ón Vi├¬n Tiß║┐ng Anh (Chß║Ñp Nhß║¡n Fresher) Hß╗úp ─Éß╗ông 1 N─âm
+    ΓÇó * Hot Job * Reporting Engineer (Power BI / Microsoft Fabric) | Remote | Full-Time
+    ΓÇó .NET Development Engineer Biß║┐t Tiß║┐ng Trung
+    ΓÇó .NET/Java Developer (Enrich Mendix)
+    ΓÇó 03 Chuy├¬n Vi├¬n Ph├ít Triß╗ân Phß║ºn Mß╗üm Ph├▓ng C├┤ng Nghß╗ç Th├┤ng Tin
+    ΓÇó 100% Remote: Executive Assistant & Product Manager (AI, Agents, SaaS) - Founders Right Hand & Start-up Employee #1
+    ΓÇó 2D Pixel Artist (Background / Character / Monster)
+    ΓÇó 3D Character Modeler
+    ΓÇó 3D Environment Modeler
+    ΓÇó 3D Rigger
+    ΓÇó AD Application Deveroper ( Chuy├¬n Vi├¬n Ph├ít Triß╗ân ß╗¿ng Dß╗Ñng)
+    ΓÇó AI Application Developer | E-Commerce App Developer
+    ΓÇó AI Engineer
+    ΓÇó AI Engineer (.NET | Applied AI)
+    ΓÇó AI Engineer (Agentic Workflows)
+    ΓÇó AI Engineer (Computer Vision/ NLP/ LLM) - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (2026TD450582)
+    ΓÇó AI Expert - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (HOLT.15)
+    ΓÇó AI Operations Specialist (English-Speaking)
+    ΓÇó AI Software Engineer (Python/GO/C/C++ Backend & AI Agents) - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (HOLT.19)
+    ΓÇó AI Solution Engineer (Lß║¡p Tr├¼nh Vi├¬n Fullstack)
+    ΓÇó AI Solutions Engineer ΓÇô Salesforce Agentforce
+    ΓÇó AI Transformation Coordinator
+    ΓÇó AI-Native Associate Product Manager
+    ΓÇó AIT Specialist
+    ΓÇó Account Executive
+    ΓÇó Account Executive B2B Website/seo/digital/hosting | Thu Nhß║¡p ─Éß║┐n 30M
+    ΓÇó Account Manager
+    ΓÇó Account Manager (Cloud Sales Representative) (Hanoi and Hochiminh)
+    ΓÇó Account Manager (Dß╗▒ ├ün CNTT Khß╗æi Gov/ent)
+    ΓÇó Account Manager (Nh├ón Vi├¬n Kinh Doanh Dß╗▒ ├ün CNTT ΓÇô Sale IT)
+    ΓÇó Account Manager - FPT Digital
+    ΓÇó Account Manager / Nh├ón vi├¬n Kinh doanh
+    ΓÇó Account Manager/ ─Éiß╗üu Phß╗æi Dß╗▒ ├ün (Promotion Campaign) (Hß╗ô Ch├¡ Minh)
+    ΓÇó Accountant
+    ΓÇó Accounting Manager
+    ΓÇó Admin
+    ΓÇó Admin & Content Operations Executive
+    ΓÇó Admin Officer / Nh├ón Vi├¬n H├ánh Ch├¡nh V─ân Ph├▓ng
+    ΓÇó Admin Staff (τ╖ÅσïÖπé╣πé┐πââπâò∩╝ë
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks_async_parallel.csv (VietnamWorks_async)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Column: [Position] - unique values:
+    ΓÇó AI Engineer
+    ΓÇó BA
+    ΓÇó DA
+    ΓÇó Data Engineer
+    ΓÇó Data Science
+    ΓÇó ML Engineer
+    ΓÇó QA
+    ΓÇó Security
+    ΓÇó Software Engineer
+
+  Column: [Skills] - unique values (split):
+    ΓÇó English (86)
+    ΓÇó Quality Control (80)
+    ΓÇó Kiß╗âm So├ít Chß║Ñt L╞░ß╗úng (76)
+    ΓÇó Data Analysis (73)
+    ΓÇó Deep Learning (70)
+    ΓÇó Giao Tiß║┐p (68)
+    ΓÇó Python (67)
+    ΓÇó Ph├ón T├¡ch Dß╗» Liß╗çu (63)
+    ΓÇó SQL (62)
+    ΓÇó Tiß║┐ng Anh (52)
+    ΓÇó Quß║ún l├╜ chß║Ñt l╞░ß╗úng (51)
+    ΓÇó Kinh Doanh (50)
+    ΓÇó Quality Assurance (49)
+    ΓÇó Communication (47)
+    ΓÇó Project Management (46)
+    ΓÇó Quß║ún L├╜ Chß║Ñt L╞░ß╗úng (46)
+    ΓÇó QA (44)
+    ΓÇó Machine Learning (39)
+    ΓÇó Quß║ún L├╜ Dß╗▒ ├ün (39)
+    ΓÇó Java (38)
+    ΓÇó AI (38)
+    ΓÇó AutoCAD (37)
+    ΓÇó Communication Skills (36)
+    ΓÇó Business Development (35)
+    ΓÇó QC (35)
+    ΓÇó T├ái Ch├¡nh (31)
+    ΓÇó Quality Management (31)
+    ΓÇó JavaScript (30)
+    ΓÇó Business Analysis (30)
+    ΓÇó Problem-solving (28)
+    ΓÇó Merchandising (28)
+    ΓÇó Power BI (27)
+    ΓÇó Quß║ún L├╜ Sß║ún Xuß║Ñt (27)
+    ΓÇó T├¼m Kiß║┐m Kh├ích H├áng (26)
+    ΓÇó Leadership (26)
+    ΓÇó Analytical Skills (25)
+    ΓÇó C++ (24)
+    ΓÇó Data Science (24)
+    ΓÇó MS Office (24)
+    ΓÇó C╞í Kh├¡ (24)
+    ΓÇó Docker (23)
+    ΓÇó C# (23)
+    ΓÇó Kß║┐ To├ín (23)
+    ΓÇó ISO 9001 (23)
+    ΓÇó Sales (22)
+    ΓÇó X├óy Dß╗▒ng (22)
+    ΓÇó Testing (21)
+    ΓÇó Python Programming (21)
+    ΓÇó Tiß║┐ng Trung (21)
+    ΓÇó Excel (21)
+    ΓÇó ─Éß║úm Bß║úo Chß║Ñt L╞░ß╗úng (21)
+    ΓÇó ISO (21)
+    ΓÇó English Communication (20)
+    ΓÇó Data Analytics (20)
+    ΓÇó Kiß╗âm So├ít Tu├ón Thß╗º (20)
+    ΓÇó Ch─âm S├│c Kh├ích H├áng (19)
+    ΓÇó Data Warehouse (19)
+    ΓÇó Kß╗╣ n─âng giao tiß║┐p (19)
+    ΓÇó Kiß╗âm Tra Chß║Ñt L╞░ß╗úng (19)
+    ΓÇó Team Management (18)
+    ΓÇó Chuyß╗ân ─æß╗òi sß╗æ (18)
+    ΓÇó Customer Service (18)
+    ΓÇó T├ái Ch├¡nh Ng├ón H├áng (18)
+    ΓÇó Big Data (18)
+    ΓÇó Quality (18)
+    ΓÇó Technical Support (17)
+    ΓÇó C├┤ng Nghß╗ç Th├┤ng Tin (17)
+    ΓÇó Ph├ít Triß╗ân Sß║ún Phß║⌐m (17)
+    ΓÇó Kß║┐ To├ín Tß╗òng Hß╗úp (17)
+    ΓÇó L├ám Viß╗çc Nh├│m (17)
+    ΓÇó Business Intelligence (17)
+    ΓÇó SQL Server (16)
+    ΓÇó B├ín H├áng (16)
+    ΓÇó Risk Management (16)
+    ΓÇó Lß║¡p Kß║┐ Hoß║ích (16)
+    ΓÇó Tin Hß╗ìc V─ân Ph├▓ng (16)
+    ΓÇó Gi├ím S├ít Thi C├┤ng (16)
+    ΓÇó Ph├ón t├¡ch dß╗» liß╗çu (16)
+    ΓÇó Giao Tiß║┐p Tiß║┐ng Anh (16)
+    ΓÇó Embedded (15)
+
+  Column: [Level] - unique values:
+    ΓÇó Gi├ím ─Éß╗æc v├á Cß║Ñp Cao H╞ín
+    ΓÇó Mß╗¢i Tß╗æt Nghiß╗çp
+    ΓÇó Nh├ón vi├¬n
+    ΓÇó Thß╗▒c tß║¡p sinh/Sinh vi├¬n
+    ΓÇó Tr╞░ß╗ƒng ph├▓ng
+
+  Column: [Years of Experience] - unique values:
+    ΓÇó 1
+    ΓÇó 10
+    ΓÇó 12
+    ΓÇó 14
+    ΓÇó 15
+    ΓÇó 2
+    ΓÇó 3
+    ΓÇó 4
+    ΓÇó 5
+    ΓÇó 6
+    ΓÇó 7
+    ΓÇó 8
+    ΓÇó Kh├┤ng hiß╗ân thß╗ï
+    ΓÇó Kh├┤ng y├¬u cß║ºu
+
+  Column: [Educational Level] - unique values:
+    ΓÇó Cao ─æß║│ng
+    ΓÇó Cß╗¡ nh├ón
+    ΓÇó Kh├íc
+    ΓÇó Kh├┤ng giß╗¢i hß║ín
+    ΓÇó Trung cß║Ñp
+    ΓÇó Trung hß╗ìc
+
+  Column: [Job Title] - sample unique values (first 50):
+    ΓÇó (HCM/V─¿NH LONG/HUE) Kß╗╣ S╞░ Triß╗ân Khai Bß║ún Vß║╜ BIM (Hß╗ç Thß╗æng MEP/ HVAC)
+    ΓÇó (HN/HCM) Senior Automation/Manual Test
+    ΓÇó (HN/HCM) Senior Frontend Engineer (JavaScript (ES6+))
+    ΓÇó (Hot) Sale Logistics
+    ΓÇó (JP 233) Kß╗╣ S╞░ MEP ╞»u Ti├¬n Kinh Nghiß╗çm REBLO / TFAS - Tß║ío Bß║ún Vß║╜ Dß╗» Liß╗çu CAD Hß╗ç Thß╗æng Th├┤ng Gi├│ Trong Nh├á Chung C╞░, Nh├á Cao Tß║ºng ─Éi Nhß║¡t Miß╗àn Ph├¡
+    ΓÇó (JP 233) Kß╗╣ S╞░ MEP: Tß║ío Bß║ún Vß║╜ Dß╗» Liß╗çu CAD Hß╗ç Thß╗æng Th├┤ng Gi├│ Trong Nh├á Chung C╞░, Nh├á Cao Tß║ºng
+    ΓÇó (JP 239) Kß╗╣ S╞░ Ph├ít Triß╗ân ß╗¿ng Dß╗Ñng VB.NET/Visual Studio - Deadline Tho├íng ─Éi Nhß║¡t Miß╗àn Ph├¡
+    ΓÇó (Senior) Financial Analyst (750M to 1B VND Per Year)
+    ΓÇó (Senior) Process Quality Engineer (Work At Cu Chi, HCMC - Shuttle Bus Provided)
+    ΓÇó (Senior) Supplier Quality Engineer (Work At HCM City, Shuttle Bus Provided)
+    ΓÇó (VN 216) Kß╗╣ S╞░ Ph├ít Triß╗ân Phß║ºn Mß╗üm Nh├║ng Matlab Simulink-Tiß║┐ng Nhß║¡t L╞░╞íng Cao-B├¼nh Thß║ính, HCM
+    ΓÇó (VN 235) Kß╗╣ S╞░ CAD Cß║ºu ─É╞░ß╗¥ng Xß╗¡ L├╜ 3D Dß╗» Liß╗çu ─É├ím M├óy, Dß╗» Liß╗çu ─Éo ─Éß║íc
+    ΓÇó (Viß╗çc l├ám V─⌐nh Long) Kß╗╣ S╞░ Triß╗ân Khai Bß║ún Vß║╜ X├óy Dß╗▒ng
+    ΓÇó (─Éß╗æng ─Éa, HN) Nh├ón Vi├¬n Tiß║┐ng Anh (Chß║Ñp Nhß║¡n Fresher) Hß╗úp ─Éß╗ông 1 N─âm
+    ΓÇó * Hot Job * Reporting Engineer (Power BI / Microsoft Fabric) | Remote | Full-Time
+    ΓÇó .NET Development Engineer Biß║┐t Tiß║┐ng Trung
+    ΓÇó .NET/Java Developer (Enrich Mendix)
+    ΓÇó 02 Nh├ón Vi├¬n Chß║Ñt L╞░ß╗úng (Sß╗¡ Dß╗Ñng Tiß║┐ng H├án/tiß║┐ng Anh Trong C├┤ng Viß╗çc. Chß║Ñp Nhß║¡n ß╗¿ng Vi├¬n Ch╞░a C├│ Kinh Nghiß╗çm)
+    ΓÇó 03 B├íc S─⌐ ─É├┤ng Y, 02 B├íc S─⌐ ─Éa Khoa (Kh├┤ng Giß╗¢i Hß║ín ─Éß╗Ö Tuß╗òi)
+    ΓÇó 03 Chuy├¬n Vi├¬n Ph├ít Triß╗ân Phß║ºn Mß╗üm Ph├▓ng C├┤ng Nghß╗ç Th├┤ng Tin
+    ΓÇó 100% Remote: Executive Assistant & Product Manager (AI, Agents, SaaS) - Founders Right Hand & Start-up Employee #1
+    ΓÇó 2D Pixel Artist (Background / Character / Monster)
+    ΓÇó 3D Character Modeler
+    ΓÇó 3D Environment Modeler
+    ΓÇó 3D Rigger
+    ΓÇó ACB - Gi├ím ─Éß╗æc Ph├▓ng Giao Dß╗ïch Khu Vß╗▒c ─Éß╗ông Nai
+    ΓÇó AD Application Deveroper ( Chuy├¬n Vi├¬n Ph├ít Triß╗ân ß╗¿ng Dß╗Ñng)
+    ΓÇó AI Application Developer | E-Commerce App Developer
+    ΓÇó AI Enablement/ Business Applications Engineer
+    ΓÇó AI Engineer
+    ΓÇó AI Engineer (.NET | Applied AI)
+    ΓÇó AI Engineer (Agentic Workflows)
+    ΓÇó AI Engineer (Computer Vision/ NLP/ LLM) - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (2026TD450582)
+    ΓÇó AI Expert - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (HOLT.15)
+    ΓÇó AI Manager | Manufacturing Focus
+    ΓÇó AI Operations Specialist (English-Speaking)
+    ΓÇó AI Software Engineer (Python/GO/C/C++ Backend & AI Agents) - Khß╗æi C├┤ng Nghß╗ç Th├┤ng Tin (HOLT.19)
+    ΓÇó AI Solution Engineer (Lß║¡p Tr├¼nh Vi├¬n Fullstack)
+    ΓÇó AI Transformation Coordinator
+    ΓÇó AI-Native Associate Product Manager
+    ΓÇó AIT Specialist
+    ΓÇó ASM Center - Pharmaceutical - ETC Channel
+    ΓÇó Account Executive
+    ΓÇó Account Executive (Agency)
+    ΓÇó Account Executive B2B Website/seo/digital/hosting | Thu Nhß║¡p ─Éß║┐n 30M
+    ΓÇó Account Manager
+    ΓÇó Account Manager (B2B / Enterprise)
+    ΓÇó Account Manager (Dß╗▒ ├ün CNTT Khß╗æi Gov/ent)
+    ΓÇó Account Manager (Nh├ón Vi├¬n Kinh Doanh Dß╗▒ ├ün CNTT ΓÇô Sale IT)
+    ΓÇó Account Manager - FPT Digital
+
+
+================================================================================
+PART 3: TECHNOLOGY TERM VARIANTS (across all files)
+================================================================================
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_dev_top_final.csv (TopDev)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γ£à C# [1 total] ΓåÆ "C#":1
+  ΓÜá∩╕Å  JavaScript [7 total] ΓåÆ VARIANTS: "js":4, "JavaScript":2, "Javascript":1
+  Γ£à TypeScript [4 total] ΓåÆ "TypeScript":4
+  Γ£à Python [10 total] ΓåÆ "Python":10
+  Γ£à Node.js [4 total] ΓåÆ "Node.js":4
+  Γ£à React [1 total] ΓåÆ "react":1
+  ΓÜá∩╕Å  .NET [3 total] ΓåÆ VARIANTS: ".NET":2, "ASP.NET":1
+  ΓÜá∩╕Å  SQL [15 total] ΓåÆ VARIANTS: "SQL":9, "PostgreSQL":4, "MySQL":1, "MSSQL":1
+  Γ£à Java [3 total] ΓåÆ "Java":3
+  Γ£à PHP [1 total] ΓåÆ "PHP":1
+  Γ£à Go/Golang [2 total] ΓåÆ "Go":2
+  Γ£à Kotlin [3 total] ΓåÆ "Kotlin":3
+  Γ£à Docker [2 total] ΓåÆ "Docker":2
+  Γ£à Kubernetes [2 total] ΓåÆ "Kubernetes":2
+  Γ£à AWS [9 total] ΓåÆ "AWS":9
+  Γ£à Azure [8 total] ΓåÆ "Azure":8
+  Γ£à GCP [4 total] ΓåÆ "GCP":4
+  Γ£à CI/CD [6 total] ΓåÆ "CI/CD":6
+  Γ£à DevOps [5 total] ΓåÆ "DevOps":5
+  ΓÜá∩╕Å  Machine Learning/ML [11 total] ΓåÆ VARIANTS: "ML":8, "Machine Learning":2, "Machine learning":1
+  Γ£à AI [96 total] ΓåÆ "AI":96
+  ΓÜá∩╕Å  Agile/Scrum [21 total] ΓåÆ VARIANTS: "Agile":11, "Scrum":10
+  ΓÜá∩╕Å  HTML/CSS [4 total] ΓåÆ VARIANTS: "HTML":3, "CSS":1
+  ΓÜá∩╕Å  Git [6 total] ΓåÆ VARIANTS: "Git":4, "GitHub":1, "GitLab":1
+  Γ£à MongoDB [5 total] ΓåÆ "MongoDB":5
+  Γ£à Redis [2 total] ΓåÆ "Redis":2
+  Γ£à Spring [1 total] ΓåÆ "Spring":1
+  Γ£à Linux [1 total] ΓåÆ "Linux":1
+  ΓÜá∩╕Å  REST/API [31 total] ΓåÆ VARIANTS: "API":15, "APIs":9, "RESTful":7
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_itviec_final.csv (ITviec)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γ£à C# [1 total] ΓåÆ "C#":1
+  Γ£à C++ [22 total] ΓåÆ "C++":22
+  ΓÜá∩╕Å  JavaScript [65 total] ΓåÆ VARIANTS: "js":30, "JavaScript":28, "JS":4, "Javascript":3
+  ΓÜá∩╕Å  TypeScript [38 total] ΓåÆ VARIANTS: "TypeScript":34, "Typescript":3, "TS":1
+  Γ£à Python [238 total] ΓåÆ "Python":238
+  ΓÜá∩╕Å  Node.js [32 total] ΓåÆ VARIANTS: "Node.js":15, "NodeJS":13, "Nodejs":3, "nodejs":1
+  ΓÜá∩╕Å  React [51 total] ΓåÆ VARIANTS: "React":36, "ReactJS":12, "React.js":3
+  Γ£à Angular [12 total] ΓåÆ "Angular":12
+  ΓÜá∩╕Å  Vue [9 total] ΓåÆ VARIANTS: "Vue":8, "VueJS":1
+  ΓÜá∩╕Å  .NET [32 total] ΓåÆ VARIANTS: ".NET":30, "ASP.NET":2
+  ΓÜá∩╕Å  SQL [243 total] ΓåÆ VARIANTS: "SQL":162, "PostgreSQL":51, "MySQL":20, "Postgres":9, "MSSQL":1
+  Γ£à Java [92 total] ΓåÆ "Java":92
+  Γ£à PHP [10 total] ΓåÆ "PHP":10
+  ΓÜá∩╕Å  Ruby [9 total] ΓåÆ VARIANTS: "Ruby":7, "Ruby on Rails":1, "Rails":1
+  ΓÜá∩╕Å  Go/Golang [54 total] ΓåÆ VARIANTS: "Go":21, "go":17, "Golang":16
+  Γ£à Kotlin [13 total] ΓåÆ "Kotlin":13
+  Γ£à Swift [12 total] ΓåÆ "Swift":12
+  Γ£à Flutter [15 total] ΓåÆ "Flutter":15
+  ΓÜá∩╕Å  React Native [14 total] ΓåÆ VARIANTS: "React Native":13, "ReactNative":1
+  Γ£à Docker [72 total] ΓåÆ "Docker":72
+  ΓÜá∩╕Å  Kubernetes [60 total] ΓåÆ VARIANTS: "Kubernetes":54, "K8s":5, "k8s":1
+  ΓÜá∩╕Å  AWS [153 total] ΓåÆ VARIANTS: "AWS":152, "Amazon Web Services":1
+  Γ£à Azure [89 total] ΓåÆ "Azure":89
+  ΓÜá∩╕Å  GCP [81 total] ΓåÆ VARIANTS: "GCP":61, "Google Cloud":20
+  ΓÜá∩╕Å  CI/CD [121 total] ΓåÆ VARIANTS: "CI/CD":120, "CICD":1
+  Γ£à DevOps [78 total] ΓåÆ "DevOps":78
+  ΓÜá∩╕Å  Machine Learning/ML [315 total] ΓåÆ VARIANTS: "ML":216, "machine learning":52, "Machine Learning":43, "Machine learning":4
+  ΓÜá∩╕Å  AI [1844 total] ΓåÆ VARIANTS: "AI":1834, "Artificial Intelligence":7, "artificial intelligence":2, "ai":1
+  ΓÜá∩╕Å  Agile/Scrum [157 total] ΓåÆ VARIANTS: "Agile":77, "Scrum":52, "agile":24, "scrum":4
+  ΓÜá∩╕Å  HTML/CSS [30 total] ΓåÆ VARIANTS: "CSS":18, "HTML":10, "HTML5":2
+  ΓÜá∩╕Å  Git [137 total] ΓåÆ VARIANTS: "GitHub":59, "Git":58, "GitLab":19, "git":1
+  Γ£à MongoDB [27 total] ΓåÆ "MongoDB":27
+  Γ£à Redis [14 total] ΓåÆ "Redis":14
+  ΓÜá∩╕Å  Elasticsearch [16 total] ΓåÆ VARIANTS: "Elasticsearch":14, "ElasticSearch":2
+  ΓÜá∩╕Å  Spring [47 total] ΓåÆ VARIANTS: "Spring":30, "Spring Boot":17
+  Γ£à Django [3 total] ΓåÆ "Django":3
+  Γ£à Laravel [3 total] ΓåÆ "Laravel":3
+  ΓÜá∩╕Å  Next.js [12 total] ΓåÆ VARIANTS: "Next.js":9, "NextJS":3
+  Γ£à Linux [39 total] ΓåÆ "Linux":39
+  ΓÜá∩╕Å  OOP [19 total] ΓåÆ VARIANTS: "OOP":12, "object-oriented":6, "Object-Oriented":1
+  ΓÜá∩╕Å  REST/API [322 total] ΓåÆ VARIANTS: "API":168, "APIs":102, "RESTful":25, "REST":23, "rest":2, "api":2
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks.csv (VietnamWorks_sync)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γ£à C++ [12 total] ΓåÆ "cpp":12
+  ΓÜá∩╕Å  JavaScript [186 total] ΓåÆ VARIANTS: "JavaScript":81, "js":79, "JS":12, "Javascript":9, "Js":4, "javascript":1
+  ΓÜá∩╕Å  TypeScript [65 total] ΓåÆ VARIANTS: "TypeScript":49, "Typescript":15, "TS":1
+  ΓÜá∩╕Å  Python [561 total] ΓåÆ VARIANTS: "Python":546, "python":11, "PYTHON":4
+  ΓÜá∩╕Å  Node.js [48 total] ΓåÆ VARIANTS: "Node.js":31, "NodeJS":14, "Nodejs":2, "Node.JS":1
+  ΓÜá∩╕Å  React [137 total] ΓåÆ VARIANTS: "React":97, "ReactJS":30, "React.js":9, "reactjs":1
+  ΓÜá∩╕Å  Angular [47 total] ΓåÆ VARIANTS: "Angular":45, "AngularJS":1, "angular":1
+  ΓÜá∩╕Å  Vue [67 total] ΓåÆ VARIANTS: "Vue":37, "Vue.js":14, "VueJS":9, "Vuejs":6, "vuejs":1
+  ΓÜá∩╕Å  .NET [139 total] ΓåÆ VARIANTS: ".NET":109, "ASP.NET":29, "dotnet":1
+  ΓÜá∩╕Å  SQL [794 total] ΓåÆ VARIANTS: "SQL":622, "PostgreSQL":84, "MySQL":79, "MSSQL":7, "Postgres":2
+  ΓÜá∩╕Å  Java [250 total] ΓåÆ VARIANTS: "Java":239, "java":7, "JAVA":4
+  ΓÜá∩╕Å  PHP [32 total] ΓåÆ VARIANTS: "PHP":31, "Php":1
+  ΓÜá∩╕Å  Ruby [5 total] ΓåÆ VARIANTS: "Ruby":4, "Rails":1
+  ΓÜá∩╕Å  Go/Golang [115 total] ΓåÆ VARIANTS: "go":66, "Go":36, "Golang":13
+  Γ£à Kotlin [7 total] ΓåÆ "Kotlin":7
+  ΓÜá∩╕Å  Swift [12 total] ΓåÆ VARIANTS: "Swift":10, "swift":2
+  Γ£à Flutter [27 total] ΓåÆ "Flutter":27
+  Γ£à React Native [14 total] ΓåÆ "React Native":14
+  ΓÜá∩╕Å  Docker [164 total] ΓåÆ VARIANTS: "Docker":160, "docker":4
+  ΓÜá∩╕Å  Kubernetes [96 total] ΓåÆ VARIANTS: "Kubernetes":76, "K8s":20
+  ΓÜá∩╕Å  AWS [188 total] ΓåÆ VARIANTS: "AWS":185, "Amazon Web Services":3
+  Γ£à Azure [216 total] ΓåÆ "Azure":216
+  ΓÜá∩╕Å  GCP [110 total] ΓåÆ VARIANTS: "GCP":91, "Google Cloud":19
+  ΓÜá∩╕Å  CI/CD [150 total] ΓåÆ VARIANTS: "CI/CD":141, "CICD":9
+  ΓÜá∩╕Å  DevOps [99 total] ΓåÆ VARIANTS: "DevOps":97, "Devops":1, "devops":1
+  ΓÜá∩╕Å  Machine Learning/ML [355 total] ΓåÆ VARIANTS: "ML":174, "Machine Learning":110, "machine learning":71
+  ΓÜá∩╕Å  AI [2214 total] ΓåÆ VARIANTS: "AI":2181, "Artificial Intelligence":26, "artificial intelligence":6, "ai":1
+  ΓÜá∩╕Å  Agile/Scrum [402 total] ΓåÆ VARIANTS: "Agile":212, "Scrum":155, "agile":30, "scrum":5
+  ΓÜá∩╕Å  HTML/CSS [133 total] ΓåÆ VARIANTS: "CSS":56, "HTML":47, "HTML5":14, "CSS3":12, "html":3, "css":1
+  ΓÜá∩╕Å  Git [183 total] ΓåÆ VARIANTS: "Git":131, "GitHub":31, "GitLab":14, "GIT":4, "git":3
+  Γ£à MongoDB [41 total] ΓåÆ "MongoDB":41
+  Γ£à Redis [36 total] ΓåÆ "Redis":36
+  ΓÜá∩╕Å  Elasticsearch [20 total] ΓåÆ VARIANTS: "Elasticsearch":15, "Elastic Search":3, "ElasticSearch":2
+  ΓÜá∩╕Å  Spring [125 total] ΓåÆ VARIANTS: "Spring":86, "Spring Boot":39
+  Γ£à Django [25 total] ΓåÆ "Django":25
+  Γ£à Laravel [22 total] ΓåÆ "Laravel":22
+  ΓÜá∩╕Å  Next.js [16 total] ΓåÆ VARIANTS: "Next.js":9, "NextJS":5, "Nextjs":1, "nextjs":1
+  ΓÜá∩╕Å  Linux [142 total] ΓåÆ VARIANTS: "Linux":136, "linux":6
+  ΓÜá∩╕Å  OOP [40 total] ΓåÆ VARIANTS: "OOP":36, "Object Oriented":2, "Object-Oriented":1, "object-oriented":1
+  ΓÜá∩╕Å  REST/API [535 total] ΓåÆ VARIANTS: "API":288, "APIs":130, "RESTful":74, "REST":36, "rest":5, "Rest":1, "api":1
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+FILE: jobs_vietnamworks_async_parallel.csv (VietnamWorks_async)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γ£à C++ [10 total] ΓåÆ "cpp":10
+  ΓÜá∩╕Å  JavaScript [177 total] ΓåÆ VARIANTS: "JavaScript":76, "js":74, "Javascript":12, "JS":10, "Js":4, "javascript":1
+  ΓÜá∩╕Å  TypeScript [67 total] ΓåÆ VARIANTS: "TypeScript":44, "Typescript":16, "TS":7
+  ΓÜá∩╕Å  Python [508 total] ΓåÆ VARIANTS: "Python":491, "python":10, "PYTHON":7
+  ΓÜá∩╕Å  Node.js [43 total] ΓåÆ VARIANTS: "Node.js":26, "NodeJS":13, "Nodejs":3, "Node.JS":1
+  ΓÜá∩╕Å  React [138 total] ΓåÆ VARIANTS: "React":94, "ReactJS":33, "React.js":9, "react":1, "reactjs":1
+  ΓÜá∩╕Å  Angular [43 total] ΓåÆ VARIANTS: "Angular":41, "AngularJS":1, "angular":1
+  ΓÜá∩╕Å  Vue [66 total] ΓåÆ VARIANTS: "Vue":36, "Vue.js":13, "VueJS":10, "Vuejs":5, "vuejs":2
+  ΓÜá∩╕Å  .NET [143 total] ΓåÆ VARIANTS: ".NET":109, "ASP.NET":33, "dotnet":1
+  ΓÜá∩╕Å  SQL [715 total] ΓåÆ VARIANTS: "SQL":566, "MySQL":74, "PostgreSQL":68, "MSSQL":6, "Postgres":1
+  ΓÜá∩╕Å  Java [232 total] ΓåÆ VARIANTS: "Java":221, "java":7, "JAVA":4
+  ΓÜá∩╕Å  PHP [29 total] ΓåÆ VARIANTS: "PHP":28, "Php":1
+  ΓÜá∩╕Å  Ruby [6 total] ΓåÆ VARIANTS: "Ruby":4, "Rails":1, "rails":1
+  ΓÜá∩╕Å  Go/Golang [153 total] ΓåÆ VARIANTS: "go":102, "Go":38, "Golang":13
+  Γ£à Kotlin [6 total] ΓåÆ "Kotlin":6
+  ΓÜá∩╕Å  Swift [13 total] ΓåÆ VARIANTS: "Swift":11, "swift":2
+  Γ£à Flutter [31 total] ΓåÆ "Flutter":31
+  Γ£à React Native [12 total] ΓåÆ "React Native":12
+  ΓÜá∩╕Å  Docker [159 total] ΓåÆ VARIANTS: "Docker":155, "docker":4
+  ΓÜá∩╕Å  Kubernetes [86 total] ΓåÆ VARIANTS: "Kubernetes":70, "K8s":16
+  ΓÜá∩╕Å  AWS [164 total] ΓåÆ VARIANTS: "AWS":162, "Amazon Web Services":2
+  Γ£à Azure [190 total] ΓåÆ "Azure":190
+  ΓÜá∩╕Å  GCP [92 total] ΓåÆ VARIANTS: "GCP":75, "Google Cloud":17
+  ΓÜá∩╕Å  CI/CD [149 total] ΓåÆ VARIANTS: "CI/CD":143, "CICD":6
+  ΓÜá∩╕Å  DevOps [112 total] ΓåÆ VARIANTS: "DevOps":110, "Devops":1, "devops":1
+  ΓÜá∩╕Å  Machine Learning/ML [333 total] ΓåÆ VARIANTS: "ML":176, "Machine Learning":93, "machine learning":64
+  ΓÜá∩╕Å  AI [2170 total] ΓåÆ VARIANTS: "AI":2139, "Artificial Intelligence":24, "ai":4, "artificial intelligence":3
+  ΓÜá∩╕Å  Agile/Scrum [421 total] ΓåÆ VARIANTS: "Agile":215, "Scrum":167, "agile":31, "scrum":8
+  ΓÜá∩╕Å  HTML/CSS [129 total] ΓåÆ VARIANTS: "CSS":50, "HTML":44, "HTML5":16, "CSS3":12, "html":6, "css":1
+  ΓÜá∩╕Å  Git [184 total] ΓåÆ VARIANTS: "Git":129, "GitHub":31, "GitLab":14, "GIT":6, "git":4
+  Γ£à MongoDB [33 total] ΓåÆ "MongoDB":33
+  Γ£à Redis [32 total] ΓåÆ "Redis":32
+  ΓÜá∩╕Å  Elasticsearch [18 total] ΓåÆ VARIANTS: "Elasticsearch":13, "Elastic Search":3, "ElasticSearch":2
+  ΓÜá∩╕Å  Spring [120 total] ΓåÆ VARIANTS: "Spring":81, "Spring Boot":39
+  Γ£à Django [25 total] ΓåÆ "Django":25
+  Γ£à Laravel [20 total] ΓåÆ "Laravel":20
+  ΓÜá∩╕Å  Next.js [19 total] ΓåÆ VARIANTS: "Next.js":13, "NextJS":4, "Nextjs":1, "nextjs":1
+  ΓÜá∩╕Å  Linux [138 total] ΓåÆ VARIANTS: "Linux":132, "linux":6
+  ΓÜá∩╕Å  OOP [45 total] ΓåÆ VARIANTS: "OOP":40, "Object-Oriented":2, "object-oriented":2, "Object Oriented":1
+  ΓÜá∩╕Å  REST/API [569 total] ΓåÆ VARIANTS: "API":316, "APIs":129, "RESTful":76, "REST":32, "rest":14, "Rest":1, "api":1
+
+
+DONE!
