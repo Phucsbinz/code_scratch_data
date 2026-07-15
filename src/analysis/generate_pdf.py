@@ -5,7 +5,7 @@ import io
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Add project root to sys.path to support imports
+# Thêm thư mục gốc dự án vào sys.path để hỗ trợ import
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if project_root not in sys.path:
     sys.path.append(project_root)
@@ -111,6 +111,6 @@ output_html = os.path.join(REPORTS_DIR, 'Research_Report_Visualized.html')
 with open(output_html, "w", encoding='utf-8') as result_file:
     result_file.write(html_template)
 
-print(f"🎉 Đã tạo file HTML chuyên nghiệp thành công tại: {output_html}")
-print("💡 MẸO: Bạn hãy mở file này bằng Chrome hoặc Edge, sau đó bấm Ctrl + P (Print) và chọn 'Save as PDF' để có bản PDF hoàn hảo 100% không bao giờ lỗi font!")
+print(f"Đã tạo file HTML chuyên nghiệp thành công tại: {output_html}")
+print("Mẹo: Bạn hãy mở file này bằng Chrome hoặc Edge, sau đó bấm Ctrl + P (Print) và chọn 'Save as PDF' để có bản PDF hoàn hảo 100% không bao giờ lỗi font!")
 

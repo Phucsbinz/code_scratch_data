@@ -17,9 +17,7 @@ import time
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ============================================================
-# 1. SPECIAL CHARACTERS MAP → replace with space
-# ============================================================
+# 1. Bản đồ ký tự đặc biệt -> thay thế bằng khoảng trắng
 SPECIAL_CHARS_MAP = {
     '\u2013': ' ', '\u2014': ' ', '\u2011': ' ', '\u2010': ' ',   # dashes
     '\u2019': ' ', '\u2018': ' ', '\u201C': ' ', '\u201D': ' ',   # quotes
@@ -35,11 +33,9 @@ SPECIAL_CHARS_MAP = {
     '\U0001F31E': '', '\U0001F4B2': '',                             # emoji
 }
 
-# ============================================================
-# 2. TECH TERM NORMALIZATION (variant → canonical lowercase)
-# ============================================================
-# Canonical mapping: variant → normalized form
-# Sorted longest-first to avoid partial matches
+# 2. Chuẩn hóa thuật ngữ công nghệ (biến thể -> chữ thường chuẩn)
+# Ánh xạ chuẩn: biến thể -> dạng chuẩn
+# Được sắp xếp theo chiều dài giảm dần để tránh khớp một phần
 _RAW_TECH_MAP = {
     # C++ variants
     'CPP': 'c++', 'cpp': 'c++', 'C++': 'c++',
@@ -128,9 +124,7 @@ for variant, canonical in sorted(_RAW_TECH_MAP.items(), key=lambda x: -len(x[0])
     except re.error:
         pass
 
-# ============================================================
-# 3. TRANSLATION (EN → VI)
-# ============================================================
+# 3. Dịch thuật (Anh -> Việt)
 try:
     from deep_translator import GoogleTranslator
     _TRANSLATOR_AVAILABLE = True
@@ -246,9 +240,7 @@ def _translate_cell(text):
     return _restore_terms(translated, mapping)
 
 
-# ============================================================
-# 4. PUBLIC FUNCTIONS - Dùng trong main.py
-# ============================================================
+# 4. Các hàm công khai - Dùng trong main.py
 
 def clean_special_chars(df):
     """
@@ -281,7 +273,7 @@ def clean_translate(df, no_translate_cols=None):
     Input/Output: DataFrame
     """
     if not _TRANSLATOR_AVAILABLE:
-        print("⚠️  deep_translator chưa cài. Chạy: pip install deep-translator")
+        print("  deep_translator chưa cài. Chạy: pip install deep-translator")
         return df
 
     if no_translate_cols is None:
@@ -351,13 +343,11 @@ def clean_dataframe(df, no_translate_cols=None, translate=True):
     else:
         print("  [4/4] Bỏ qua dịch thuật.")
 
-    print("  ✅ Hoàn tất!")
+    print("  Hoàn tất!")
     return df
 
 
-# ============================================================
-# PRIVATE HELPERS
-# ============================================================
+# Các hàm hỗ trợ nội bộ
 
 # Thuật ngữ chứa . hoặc / cần bảo vệ khi xóa dấu . /
 _TERMS_WITH_DOT_SLASH = [

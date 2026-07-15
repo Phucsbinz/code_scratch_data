@@ -31,11 +31,11 @@ def export_csv(filename):
                 df[col] = ""
         df = df[cols]
         out_path = os.path.join(config.RAW_DATA_DIR, filename)
-        print(f"\n💾 Đang lưu {len(all_scraped_jobs)} dòng ra file {out_path}...")
+        print(f"\nĐang lưu {len(all_scraped_jobs)} dòng ra file {out_path}...")
         df.to_csv(out_path, index=False, encoding="utf-8-sig")
-        print("🎉 Hoàn tất!")
+        print("Hoàn tất!")
     else:
-        print("\n⚠️ Chưa cào được chi tiết công việc nào để lưu.")
+        print("\nChưa cào được chi tiết công việc nào để lưu.")
 
 async def gather_links_for_keyword(browser, keyword, semaphore):
     async with semaphore:
@@ -47,7 +47,7 @@ async def gather_links_for_keyword(browser, keyword, semaphore):
         await page.route("**/*.{png,jpg,jpeg,gif,svg}", lambda route: route.abort())
         
         links_data = []
-        print(f"🔎 Đang tìm kiếm từ khóa: {keyword}")
+        print(f"Đang tìm kiếm từ khóa: {keyword}")
         try:
             keyword_encoded = keyword.replace(" ", "%20")
             url = f"https://www.vietnamworks.com/viec-lam?q={keyword_encoded}"
@@ -99,7 +99,7 @@ async def gather_links_for_keyword(browser, keyword, semaphore):
                     break
                     
         except Exception as e:
-            print(f"❌ Lỗi khi lấy link cho keyword '{keyword}': {e}")
+            print(f"Lỗi khi lấy link cho keyword '{keyword}': {e}")
         finally:
             await page.close()
             await context.close()
@@ -113,7 +113,7 @@ async def scrape_job_detail(context, job_data, semaphore, idx, total):
         await page.route("**/*.{png,jpg,jpeg,gif,svg}", lambda route: route.abort())
         link = job_data["Link"]
         
-        print(f"⏳ Đang cào chi tiết link thứ: [{idx}/{total}]")
+        print(f"Đang cào chi tiết link thứ: [{idx}/{total}]")
         try:
             # Dùng 'load' thay vì 'domcontentloaded' để web tải xong hẳn
             await page.goto(link, wait_until="load", timeout=60000)
@@ -159,7 +159,7 @@ async def scrape_job_detail(context, job_data, semaphore, idx, total):
             all_scraped_jobs.append(job_data)
             
         except Exception as e:
-            print(f"❌ Lỗi khi cào {link}: {e}")
+            print(f"Lỗi khi cào {link}: {e}")
         finally:
             await page.close()
 
@@ -175,9 +175,7 @@ async def main():
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
         )
 
-        print("==================================================")
-        print("🚀 BẮT ĐẦU VÒNG 1: LẤY DANH SÁCH LINKS SONG SONG")
-        print("==================================================")
+        print("Bắt đầu vòng 1: Lấy danh sách links song song")
         link_semaphore = asyncio.Semaphore(3)
         
         link_tasks = [gather_links_for_keyword(browser, kw, link_semaphore) for kw in list_search]
@@ -187,11 +185,9 @@ async def main():
         for res in results:
             all_jobs.extend(res)
             
-        print(f"\n✅ Đã lấy xong tổng cộng: {len(all_jobs)} links (chưa lọc trùng).")
+        print(f"\nĐã lấy xong tổng cộng: {len(all_jobs)} links (chưa lọc trùng).")
 
-        print("\n==================================================")
-        print("🚀 BẮT ĐẦU VÒNG 2: LẤY CHI TIẾT CÔNG VIỆC SONG SONG")
-        print("==================================================")
+        print("\nBắt đầu vòng 2: Lấy chi tiết công việc song song")
         
         # Có thể nâng concurrency lên 4 hoặc 5 vì đã có cơ chế delay ngẫu nhiên an toàn
         detail_semaphore = asyncio.Semaphore(10)
@@ -208,5 +204,5 @@ if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        print("\n\n⛔ Dừng đột ngột bởi người dùng! Đang lưu các data đã cào được...")
+        print("\n\nDừng đột ngột bởi người dùng! Đang lưu các dữ liệu đã cào được...")
         export_csv("jobs_vietnamworks_async_parallel_partial.csv")

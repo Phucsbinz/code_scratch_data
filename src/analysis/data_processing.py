@@ -15,10 +15,8 @@ import pandas as pd
 import re
 import numpy as np
 
-# ============================================================
 # 1. DANH MỤC TỪ KHÓA MỞ RỘNG
-# ============================================================
-# Format: 'canonical': [(pattern, is_regex), ...]
+# Định dạng: 'canonical': [(pattern, is_regex), ...]
 # Tất cả patterns sẽ được wrap trong word boundary khi matching
 
 ROLE_CATEGORY = {
@@ -400,9 +398,7 @@ CERTIFICATIONS = {
     'data science cert': [('data science certification', False), ('machine learning certification', False)],
 }
 
-# ============================================================
-# 1b. PRE-COMPILED REGEX (tối ưu tốc độ)
-# ============================================================
+# 1b. BIÊN DỊCH TRƯỚC REGEX (tối ưu tốc độ)
 
 def _build_compiled_mapping(mapping):
     """Pre-compile tất cả patterns trong mapping thành 1 regex duy nhất per keyword."""
@@ -436,9 +432,7 @@ _C_WORK_STYLE = _build_compiled_mapping(WORK_STYLE)
 _C_EDUCATION = _build_compiled_mapping(EDUCATION)
 _C_CERTIFICATIONS = _build_compiled_mapping(CERTIFICATIONS)
 
-# ============================================================
 # 2. HÀM TRÍCH XUẤT NÂNG CAO
-# ============================================================
 
 def extract_salary(text):
     """Trích xuất khoảng lương từ text."""
@@ -518,9 +512,7 @@ def _match_keywords(text, compiled_mapping):
     return found if found else None
 
 
-# ============================================================
-# 3. PUBLIC INTERFACE
-# ============================================================
+# 3. GIAO DIỆN CÔNG KHAI
 
 def extract_keywords(df):
     """
@@ -533,7 +525,7 @@ def extract_keywords(df):
     - soft skills, language_req...: từ skills_qualifications
     - salary, experience: từ full text
     """
-    # === XÁC ĐỊNH CÁC CỘT QUÉT ===
+    # Xác định các cột quét
     all_cols = list(df.columns)
     cols_lower = {c: c.lower() for c in all_cols}
 
@@ -570,7 +562,7 @@ def extract_keywords(df):
     print(f"  Cột quét Tech:   {tech_cols}")
     print(f"  Cột quét Skills: {skill_cols}")
 
-    # === TẠO TEXT TỔNG HỢP CHO MỖI NHÓM ===
+    # Tạo văn bản tổng hợp cho mỗi nhóm
     def combine_cols(cols):
         return df[cols].fillna("").astype(str).agg(" ".join, axis=1).str.lower()
 
@@ -582,12 +574,12 @@ def extract_keywords(df):
 
     res_df = pd.DataFrame(index=df.index)
 
-    # === ROLE & LEVEL ===
+    # Vai trò và Cấp bậc
     print("    - Đang quét Role & Level...")
     res_df['role_category'] = role_text.apply(lambda x: _match_keywords(x, _C_ROLE))
     res_df['experience_level'] = level_text.apply(lambda x: _match_keywords(x, _C_EXPERIENCE))
 
-    # === TECH STACK (quét trên tech_text — tất cả trừ benefits) ===
+    # Công nghệ (quét trên tech_text — tất cả trừ phúc lợi)
     print("    - Đang quét Tech Stack...")
     res_df['languages'] = tech_text.apply(lambda x: _match_keywords(x, _C_LANGUAGES))
     res_df['frameworks'] = tech_text.apply(lambda x: _match_keywords(x, _C_FRAMEWORKS))
@@ -596,12 +588,12 @@ def extract_keywords(df):
     res_df['cloud'] = tech_text.apply(lambda x: _match_keywords(x, _C_CLOUD))
     res_df['devops_tools'] = tech_text.apply(lambda x: _match_keywords(x, _C_DEVOPS))
 
-    # === WORK TOOLS ===
+    # Công cụ làm việc
     print("    - Đang quét Work Tools (Git, Jira...)...")
     res_df['version_control'] = tech_text.apply(lambda x: _match_keywords(x, _C_VERSION_CONTROL))
     res_df['pm_tools'] = skill_text.apply(lambda x: _match_keywords(x, _C_PM_TOOLS))
 
-    # === SOFT SKILLS & OTHERS (quét trên skill_text) ===
+    # Kỹ năng mềm và các thông tin khác (quét trên skill_text)
     print("    - Đang quét Soft Skills & Requirements...")
     res_df['soft_skills'] = skill_text.apply(lambda x: _match_keywords(x, _C_SOFT_SKILLS))
     res_df['language_requirement'] = skill_text.apply(lambda x: _match_keywords(x, _C_LANGUAGE_REQ))
@@ -610,7 +602,7 @@ def extract_keywords(df):
     res_df['education'] = skill_text.apply(lambda x: _match_keywords(x, _C_EDUCATION))
     res_df['certifications'] = skill_text.apply(lambda x: _match_keywords(x, _C_CERTIFICATIONS))
 
-    # === SALARY & EXPERIENCE (quét full text) ===
+    # Lương và Kinh nghiệm (quét toàn bộ văn bản)
     print("    - Đang trích xuất Lương & Kinh nghiệm...")
     salary_info = full_text.apply(extract_salary)
     res_df['salary_min'] = salary_info.apply(lambda x: x.get('salary_min') if x else np.nan)

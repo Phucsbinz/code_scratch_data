@@ -8,7 +8,7 @@ from collections import Counter, OrderedDict
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Add project root to sys.path to support imports
+# Thêm thư mục gốc dự án vào sys.path để hỗ trợ import
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if project_root not in sys.path:
     sys.path.append(project_root)
@@ -25,9 +25,7 @@ files = {
 
 result = OrderedDict()
 
-# ============================================================
-# 1. Analyze special characters per column per file
-# ============================================================
+# 1. Phân tích ký tự đặc biệt trên mỗi cột của từng tệp
 print("Analyzing special characters...")
 
 for fname, label in files.items():
@@ -38,9 +36,8 @@ for fname, label in files.items():
     file_result['source'] = label
     file_result['shape'] = {'rows': int(df.shape[0]), 'cols': int(df.shape[1])}
     file_result['columns'] = list(df.columns)
-    file_result['null_counts'] = {col: int(df[col].isnull().sum()) for col in df.columns}
     
-    # Special characters per column
+    # Ký tự đặc biệt trên mỗi cột
     special_chars = OrderedDict()
     for col in df.columns:
         all_text = ' '.join(df[col].dropna().astype(str).tolist())
@@ -59,33 +56,30 @@ for fname, label in files.items():
     
     result[fname] = file_result
 
-# ============================================================
-# 2. Unique values in key columns
-# ============================================================
+# 2. Phân tích các giá trị duy nhất trong các cột chính
 print("Analyzing unique values in key columns...")
 
-# --- TopDev ---
+# Phân tích tệp TopDev
 df = pd.read_csv(os.path.join(BASE_DIR, 'jobs_dev_top_final.csv'), encoding='utf-8')
 result['jobs_dev_top_final.csv']['unique_values'] = OrderedDict()
 result['jobs_dev_top_final.csv']['unique_values']['position'] = sorted(df['position'].dropna().unique().tolist())
 result['jobs_dev_top_final.csv']['unique_values']['level'] = sorted(df['level'].dropna().unique().tolist())
 
-# --- ITviec ---
+# Phân tích tệp ITviec
 df = pd.read_csv(os.path.join(BASE_DIR, 'jobs_itviec_final.csv'), encoding='utf-8')
 result['jobs_itviec_final.csv']['unique_values'] = OrderedDict()
 result['jobs_itviec_final.csv']['unique_values']['position'] = sorted(df['position'].dropna().unique().tolist())
 
-# Skills (split by underscore _ since ITviec uses _ as separator)
+# Kỹ năng (tách theo ký tự gạch dưới _ vì ITviec dùng _ làm dấu phân cách)
 all_skills = []
 for v in df['skills'].dropna():
-    # ITviec skills are separated by underscore groups, keep as-is for now
     all_skills.append(str(v))
 skill_counts = Counter(all_skills)
 result['jobs_itviec_final.csv']['unique_values']['skills_top80'] = [
     {'skill': s, 'count': c} for s, c in skill_counts.most_common(80)
 ]
 
-# Domain company
+# Lĩnh vực hoạt động của công ty (domain_company)
 all_domains = []
 for v in df['domain_company'].dropna():
     parts = re.split(r'[,;|]', str(v))
@@ -98,14 +92,14 @@ result['jobs_itviec_final.csv']['unique_values']['domain_company'] = [
     {'domain': d, 'count': c} for d, c in domain_counts.most_common(50)
 ]
 
-# --- VietnamWorks sync & async ---
+# Phân tích tệp VietnamWorks sync & async
 for fname in ['jobs_vietnamworks.csv', 'jobs_vietnamworks_async_parallel.csv']:
     df = pd.read_csv(os.path.join(BASE_DIR, fname), encoding='utf-8')
     result[fname]['unique_values'] = OrderedDict()
     
     result[fname]['unique_values']['Position'] = sorted(df['Position'].dropna().unique().tolist())
     
-    # Skills (comma-separated)
+    # Kỹ năng (phân tách bằng dấu phẩy)
     all_skills = []
     for v in df['Skills'].dropna():
         parts = re.split(r'[,;|]', str(v))
@@ -122,12 +116,10 @@ for fname in ['jobs_vietnamworks.csv', 'jobs_vietnamworks_async_parallel.csv']:
     result[fname]['unique_values']['Years_of_Experience'] = sorted(df['Years of Experience'].dropna().unique().tolist())
     result[fname]['unique_values']['Educational_Level'] = sorted(df['Educational Level'].dropna().unique().tolist())
     
-    # Job Title samples (first 50)
+    # Mẫu tiêu đề công việc (50 mẫu đầu tiên)
     result[fname]['unique_values']['Job_Title_sample50'] = sorted(df['Job Title'].dropna().unique().tolist())[:50]
 
-# ============================================================
-# 3. Technology term variants across all files
-# ============================================================
+# 3. Các biến thể thuật ngữ công nghệ trên toàn bộ các tệp dữ liệu
 print("Analyzing technology term variants...")
 
 tech_patterns = {
@@ -206,9 +198,7 @@ for fname, label in files.items():
     
     tech_variants_all[fname] = file_tech
 
-# ============================================================
-# 4. Build final output
-# ============================================================
+# 4. Tạo cấu trúc đầu ra cuối cùng
 output = OrderedDict()
 output['_metadata'] = {
     'description': 'CSV Analysis Report - Special Characters, Unique Values, and Tech Term Variants',
@@ -219,12 +209,10 @@ output['_metadata'] = {
 output['file_overview'] = result
 output['tech_term_variants'] = tech_variants_all
 
-# ============================================================
-# 5. Write to JSON
-# ============================================================
+# 5. Ghi ra tệp JSON
 output_path = os.path.join(config.REPORTS_DIR, 'csv_analysis_result.json')
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
-print(f"\n✅ Done! Results saved to: {output_path}")
-print(f"   File size: {os.path.getsize(output_path) / 1024:.1f} KB")
+print(f"\nHoàn tất! Kết quả được lưu tại: {output_path}")
+print(f"   Dung lượng file: {os.path.getsize(output_path) / 1024:.1f} KB")

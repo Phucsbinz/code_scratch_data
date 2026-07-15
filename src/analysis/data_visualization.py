@@ -12,15 +12,13 @@ from pywaffle import Waffle
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Add project root to sys.path to support imports
+# Thêm thư mục gốc dự án vào sys.path để hỗ trợ import
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if project_root not in sys.path:
     sys.path.append(project_root)
 import config
 
-# ==========================================
 # CẤU HÌNH VÀ TIỀN XỬ LÝ DỮ LIỆU
-# ==========================================
 # Cấu hình font chữ hiển thị tiếng Việt tốt hơn nếu có
 plt.rcParams['font.family'] = 'sans-serif'
 sns.set_theme(style="whitegrid")
@@ -248,9 +246,7 @@ for col in list_cols:
     if col in df.columns:
         df[col] = df[col].apply(safe_eval)
 
-# ==========================================
 # PHÂN TÍCH & TRỰC QUAN HÓA
-# ==========================================
 
 print("Đang vẽ biểu đồ Tổng quan...")
 # 1. TỔNG QUAN THỊ TRƯỜNG (MARKET SNAPSHOT)
@@ -445,9 +441,7 @@ if not cloud_pos_df.empty and 'cloud_tools' in locals() and not cloud_tools.empt
         plt.savefig(os.path.join(CHART_DIR, 'heatmap_position_cloud.png'), dpi=300)
         plt.close()
 
-# ==========================================
 # TẠO BÁO CÁO (MARKDOWN)
-# ==========================================
 print("Đang tạo Báo cáo nghiên cứu...")
 education_reqs = count_frequencies(df['education'])
 
@@ -519,4 +513,4 @@ Từ các Insight trên, dưới đây là đề xuất chiến lược học t�
 with open(os.path.join(OUT_DIR, 'Research_Report.md'), 'w', encoding='utf-8') as f:
     f.write(report_content)
 
-print(f"✅ Đã phân tích xong! Kết quả lưu tại thư mục: {OUT_DIR}")
+print(f"Đã phân tích xong! Kết quả lưu tại thư mục: {OUT_DIR}")

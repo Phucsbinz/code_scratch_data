@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Add project root to sys.path to support imports
+# Thêm thư mục gốc dự án vào sys.path để hỗ trợ import
 project_root = Path(__file__).resolve().parents[2]
 if str(project_root) not in sys.path:
     sys.path.append(str(project_root))
