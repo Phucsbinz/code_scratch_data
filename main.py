@@ -1,7 +1,7 @@
 """
 main.py - Pipeline xử lý 4 file CSV:
-  1. Cleaning (data_cleaning.py)
-  2. Advanced Information Extraction (data_processing.py)
+  1. Cleaning (src/analysis/data_cleaning.py)
+  2. Advanced Information Extraction (src/analysis/data_processing.py)
 """
 
 import pandas as pd
@@ -13,43 +13,45 @@ import numpy as np
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-from data_cleaning import clean_dataframe
-from data_processing import extract_keywords
+# Thêm project root vào sys.path để import config và src
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import config
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from src.analysis.data_cleaning import clean_dataframe
+from src.analysis.data_processing import extract_keywords
 
 # ============================================================
-# Cấu hình 4 file CSV
+# Cấu hình 4 file CSV với đường dẫn tương đối từ data folders
 # ============================================================
 FILES = [
     {
-        'input': 'jobs_dev_top_final.csv',
-        'output_cleaned': 'jobs_dev_top_final_cleaned.csv',
-        'output_keywords': 'jobs_dev_top_final_extracted.csv',
+        'input': os.path.join(config.RAW_DATA_DIR, 'jobs_dev_top_final.csv'),
+        'output_cleaned': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_dev_top_final_cleaned.csv'),
+        'output_keywords': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_dev_top_final_extracted.csv'),
         'source': 'TopDev',
         'rename_cols': {},
         'no_translate_cols': ['job_name', 'position', 'level'],
     },
     {
-        'input': 'jobs_itviec_final.csv',
-        'output_cleaned': 'jobs_itviec_final_cleaned.csv',
-        'output_keywords': 'jobs_itviec_final_extracted.csv',
+        'input': os.path.join(config.RAW_DATA_DIR, 'jobs_itviec_final.csv'),
+        'output_cleaned': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_itviec_final_cleaned.csv'),
+        'output_keywords': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_itviec_final_extracted.csv'),
         'source': 'ITviec',
         'rename_cols': {},
         'no_translate_cols': ['job_name', 'position', 'skills'],
     },
     {
-        'input': 'jobs_vietnamworks.csv',
-        'output_cleaned': 'jobs_vietnamworks_cleaned.csv',
-        'output_keywords': 'jobs_vietnamworks_extracted.csv',
+        'input': os.path.join(config.RAW_DATA_DIR, 'jobs_vietnamworks.csv'),
+        'output_cleaned': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_vietnamworks_cleaned.csv'),
+        'output_keywords': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_vietnamworks_extracted.csv'),
         'source': 'VietnamWorks_sync',
         'rename_cols': {'Job Title': 'job_name', 'Position': 'position'},
         'no_translate_cols': ['job_name', 'position', 'Skills', 'Level'],
     },
     {
-        'input': 'jobs_vietnamworks_async_parallel.csv',
-        'output_cleaned': 'jobs_vietnamworks_async_parallel_cleaned.csv',
-        'output_keywords': 'jobs_vietnamworks_async_parallel_extracted.csv',
+        'input': os.path.join(config.RAW_DATA_DIR, 'jobs_vietnamworks_async_parallel.csv'),
+        'output_cleaned': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_vietnamworks_async_parallel_cleaned.csv'),
+        'output_keywords': os.path.join(config.PROCESSED_DATA_DIR, 'jobs_vietnamworks_async_parallel_extracted.csv'),
         'source': 'VietnamWorks_async',
         'rename_cols': {'Job Title': 'job_name', 'Position': 'position'},
         'no_translate_cols': ['job_name', 'position', 'Skills', 'Level'],
@@ -70,7 +72,7 @@ def save_csv(df, path, label):
             base, ext = os.path.splitext(path)
             save_path = f"{base}_v{attempt+2}{ext}"
             print(f"  ⚠️ File bị lock, thử lưu: {os.path.basename(save_path)}")
-
+ 
     if saved:
         size_kb = os.path.getsize(save_path) / 1024
         print(f"  💾 {label}: {os.path.basename(save_path)} ({size_kb:.1f} KB)")
@@ -205,10 +207,10 @@ def main():
 
     for i, cfg in enumerate(FILES, 1):
         print(f"\n{'='*60}")
-        print(f"[{i}/4] {cfg['source']}: {cfg['input']}")
+        print(f"[{i}/4] {cfg['source']}: {os.path.basename(cfg['input'])}")
         print(f"{'='*60}")
 
-        input_path = os.path.join(BASE_DIR, cfg['input'])
+        input_path = cfg['input']
 
         # Đọc CSV
         df = pd.read_csv(input_path, encoding='utf-8')
@@ -238,9 +240,7 @@ def main():
         t_clean = time.time() - start
 
         # Lưu file cleaned
-        save_csv(df_cleaned,
-                 os.path.join(BASE_DIR, cfg['output_cleaned']),
-                 f"Cleaned [{t_clean:.1f}s]")
+        save_csv(df_cleaned, cfg['output_cleaned'], f"Cleaned [{t_clean:.1f}s]")
 
         # === STEP 2: Advanced Extraction ===
         start = time.time()
@@ -261,9 +261,7 @@ def main():
         t_ext = time.time() - start
 
         # Lưu file extracted cho từng file
-        save_csv(df_ext,
-                 os.path.join(BASE_DIR, cfg['output_keywords']),
-                 f"Extracted [{t_ext:.1f}s]")
+        save_csv(df_ext, cfg['output_keywords'], f"Extracted [{t_ext:.1f}s]")
 
         all_results.append(df_ext)
 
@@ -273,7 +271,7 @@ def main():
     df_all = pd.concat(all_results, ignore_index=True)
     
     save_csv(df_all,
-             os.path.join(BASE_DIR, 'all_jobs_final_analysis.csv'),
+             os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis.csv'),
              "FINAL ANALYSIS merged")
 
     # === STEP 4: Lọc dữ liệu — xóa dòng phi tech + cột trống + xử lý trùng lặp ===
@@ -285,7 +283,7 @@ def main():
     df_filtered = handle_duplicate_jobs(df_filtered)
 
     save_csv(df_filtered,
-             os.path.join(BASE_DIR, 'all_jobs_final_analysis_filtered.csv'),
+             os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis_filtered.csv'),
              "FINAL FILTERED")
 
     total = time.time() - start_all
@@ -298,7 +296,7 @@ def main():
 
 def main2():
     """Chỉ lọc dữ liệu từ file all_jobs_final_analysis.csv có sẵn."""
-    input_path = os.path.join(BASE_DIR, 'all_jobs_final_analysis.csv')
+    input_path = os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis.csv')
     print(f"Đọc file: {os.path.basename(input_path)}")
     df = pd.read_csv(input_path, encoding='utf-8')
     print(f"  📄 {df.shape[0]} dòng x {df.shape[1]} cột")
@@ -309,7 +307,7 @@ def main2():
     print(f"{'='*60}")
     df = filter_empty_rows(df)
     save_csv(df,
-             os.path.join(BASE_DIR, 'all_jobs_rows_filtered.csv'),
+             os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_rows_filtered.csv'),
              "ROWS FILTERED")
 
     # Bước 2: Xóa cột trống > 80%
@@ -325,7 +323,7 @@ def main2():
     df = handle_duplicate_jobs(df)
 
     save_csv(df,
-             os.path.join(BASE_DIR, 'all_jobs_final_analysis_filtered.csv'),
+             os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis_filtered.csv'),
              "FINAL FILTERED")
 
 

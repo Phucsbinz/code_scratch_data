@@ -1,10 +1,19 @@
 import markdown
 import os
+import sys
+import io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+# Add project root to sys.path to support imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+import config
 
 # Đường dẫn thư mục
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
-CHARTS_DIR = os.path.join(REPORTS_DIR, 'charts')
+REPORTS_DIR = config.REPORTS_DIR
+CHARTS_DIR = config.CHARTS_DIR
 
 def get_img_path(filename):
     # Trả về đường dẫn tuyệt đối dạng D:/... cho xhtml2pdf

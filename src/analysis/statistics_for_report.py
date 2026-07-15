@@ -2,13 +2,22 @@ import ast
 import csv
 import json
 import math
+import sys
+import io
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-INPUT_CSV = BASE_DIR / "all_jobs_final_analysis_filtered.csv"
-REPORTS_DIR = BASE_DIR / "reports"
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+# Add project root to sys.path to support imports
+project_root = Path(__file__).resolve().parents[2]
+if str(project_root) not in sys.path:
+    sys.path.append(str(project_root))
+import config
+
+INPUT_CSV = Path(config.PROCESSED_DATA_DIR) / "all_jobs_final_analysis_filtered.csv"
+REPORTS_DIR = Path(config.REPORTS_DIR)
 OUTPUT_JSON = REPORTS_DIR / "jd_statistics_for_report.json"
 OUTPUT_MD = REPORTS_DIR / "JD_Statistics_Summary.md"
 
@@ -238,11 +247,26 @@ def top_table(stats, key, title, top_n=10):
 
 
 def coverage_table(stats):
+    translated_names = {
+        "role_category": "Nhóm vị trí công việc (role_category)",
+        "soft_skills": "Kỹ năng mềm (soft_skills)",
+        "languages": "Ngôn ngữ lập trình / Nền tảng (languages)",
+        "experience_level": "Cấp độ kinh nghiệm (experience_level)",
+        "education": "Yêu cầu học vấn / Bằng cấp (education)",
+        "work_style": "Quy trình / Phong cách làm việc (work_style)",
+        "language_requirement": "Yêu cầu ngoại ngữ (language_requirement)",
+        "devops_tools": "Công cụ DevOps & Hạ tầng (devops_tools)",
+        "data_ai": "Kỹ năng & Công cụ Data/AI (data_ai)",
+        "databases": "Cơ sở dữ liệu (databases)",
+        "frameworks": "Framework & Thư viện (frameworks)",
+        "methodology": "Phương pháp phát triển (methodology)",
+        "cloud": "Nền tảng đám mây (cloud)"
+    }
     rows = []
     for col, item in stats["coverage"].items():
         rows.append(
             {
-                "Nhóm dữ liệu": col,
+                "Nhóm dữ liệu": translated_names.get(col, col),
                 "JD có dữ liệu": item["jobs_with_value"],
                 "% trên tổng JD": item["percent_of_jobs"],
                 "Số giá trị khác nhau": item["unique_values"],

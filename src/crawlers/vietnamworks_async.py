@@ -3,6 +3,14 @@ from playwright.async_api import async_playwright
 import pandas as pd
 from playwright_stealth import Stealth
 import random
+import os
+import sys
+
+# Add project root to sys.path to support imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+import config
 
 # Cấu hình proxy xoay tự động (Vui lòng điền proxy của bạn nếu cần)
 PROXY_DICT = {
@@ -22,8 +30,9 @@ def export_csv(filename):
             if col not in df.columns:
                 df[col] = ""
         df = df[cols]
-        print(f"\n💾 Đang lưu {len(all_scraped_jobs)} dòng ra file {filename}...")
-        df.to_csv(filename, index=False, encoding="utf-8-sig")
+        out_path = os.path.join(config.RAW_DATA_DIR, filename)
+        print(f"\n💾 Đang lưu {len(all_scraped_jobs)} dòng ra file {out_path}...")
+        df.to_csv(out_path, index=False, encoding="utf-8-sig")
         print("🎉 Hoàn tất!")
     else:
         print("\n⚠️ Chưa cào được chi tiết công việc nào để lưu.")

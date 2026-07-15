@@ -5,8 +5,18 @@ import numpy as np
 import ast
 from collections import Counter
 import os
+import sys
+import io
 import squarify
 from pywaffle import Waffle
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+# Add project root to sys.path to support imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+import config
 
 # ==========================================
 # CẤU HÌNH VÀ TIỀN XỬ LÝ DỮ LIỆU
@@ -16,8 +26,8 @@ plt.rcParams['font.family'] = 'sans-serif'
 sns.set_theme(style="whitegrid")
 
 # Tạo thư mục lưu kết quả
-OUT_DIR = 'reports'
-CHART_DIR = os.path.join(OUT_DIR, 'charts')
+OUT_DIR = config.REPORTS_DIR
+CHART_DIR = config.CHARTS_DIR
 os.makedirs(CHART_DIR, exist_ok=True)
 
 def safe_eval(val):
@@ -84,6 +94,44 @@ def plot_donut(data, title, filename):
     plt.title(title, fontsize=14, fontweight='bold', pad=15)
     plt.tight_layout()
     plt.savefig(os.path.join(CHART_DIR, filename), dpi=300)
+    plt.close()
+
+def plot_education_requirements(df, filename):
+    total_jds = len(df)
+    
+    # Calculate counts dynamically matching the table logic
+    bachelor_count = sum(df['education'].apply(lambda x: isinstance(x, list) and "bachelor's" in x))
+    master_count = sum(df['education'].apply(lambda x: isinstance(x, list) and "master's/phd" in x))
+    college_count = sum(df['education'].apply(lambda x: isinstance(x, list) and "college" in x))
+    
+    # "Không ghi rõ" is total minus the sum of these three (to match the table's logic)
+    unspecified_count = total_jds - (bachelor_count + master_count + college_count)
+    
+    degree_counts = pd.Series({
+        "Đại học (Bachelor's)": bachelor_count,
+        "Không ghi rõ": unspecified_count,
+        "Thạc sĩ / Tiến sĩ (Master's/PhD)": master_count,
+        "Cao đẳng / Trung cấp (College)": college_count
+    })
+    
+    # Create single plot
+    plt.figure(figsize=(8, 8))
+    
+    colors = ['#3498db', '#bdc3c7', '#9b59b6', '#f1c40f']
+    wedges, texts, autotexts = plt.pie(
+        degree_counts.values, 
+        labels=degree_counts.index, 
+        autopct='%1.1f%%', 
+        startangle=140, 
+        colors=colors[:len(degree_counts)],
+        wedgeprops=dict(width=0.4, edgecolor='w')
+    )
+    plt.setp(autotexts, size=10, weight="bold")
+    plt.setp(texts, size=10)
+    plt.title("Yêu cầu Trình độ Học vấn (Degree Level)", fontsize=14, fontweight='bold', pad=15)
+    plt.tight_layout()
+    plt.savefig(os.path.join(CHART_DIR, filename), dpi=300)
+    plt.savefig(os.path.join(config.SLIDE_CHARTS_DIR, filename), dpi=300)
     plt.close()
 
 def plot_pie(data, title, filename, max_items=6):
@@ -190,7 +238,7 @@ def plot_stacked_bar(data, title, filename, max_items=6):
 
 # Đọc dữ liệu
 print("Đang đọc dữ liệu...")
-df = pd.read_csv('all_jobs_final_analysis_filtered.csv', encoding='utf-8')
+df = pd.read_csv(os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis_filtered.csv'), encoding='utf-8')
 
 # Các cột cần parse từ string sang list
 list_cols = ['role_category', 'experience_level', 'languages', 'data_ai', 
@@ -227,9 +275,7 @@ plot_treemap(exp_levels, "Treemap: Cấp độ Kinh nghiệm", "experience_level
 
 # Yêu cầu bằng cấp
 print("Đang vẽ biểu đồ Bằng cấp/Giáo dục...")
-education_reqs = count_frequencies(df['education'])
-if not education_reqs.empty:
-    plot_donut(education_reqs, "Yêu cầu Bằng cấp / Học vấn (Education)", "education_requirements.png")
+plot_education_requirements(df, "education_requirements.png")
 
 print("Đang vẽ biểu đồ Kỹ năng chuyên sâu...")
 # 2. KỸ NĂNG CHUYÊN SÂU (DEEP DIVE SKILLS)
@@ -403,6 +449,7 @@ if not cloud_pos_df.empty and 'cloud_tools' in locals() and not cloud_tools.empt
 # TẠO BÁO CÁO (MARKDOWN)
 # ==========================================
 print("Đang tạo Báo cáo nghiên cứu...")
+education_reqs = count_frequencies(df['education'])
 
 report_content = f"""# 🎯 Báo Cáo Nghiên Cứu: Nhu cầu Tuyển dụng & Khoảng cách Kỹ năng IT
 

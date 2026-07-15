@@ -1,0 +1,2602 @@
+{
+  "metadata": {
+    "input_file": "all_jobs_final_analysis_filtered.csv",
+    "generated_at": "2026-07-15T17:41:52",
+    "total_jobs": 837,
+    "columns": [
+      "source",
+      "job_name",
+      "position",
+      "original_level",
+      "role_category",
+      "experience_level",
+      "languages",
+      "frameworks",
+      "data_ai",
+      "databases",
+      "cloud",
+      "devops_tools",
+      "soft_skills",
+      "language_requirement",
+      "methodology",
+      "work_style",
+      "education",
+      "years_of_exp"
+    ]
+  },
+  "overview": {
+    "total_jobs": 837,
+    "total_columns": 18,
+    "sources": [
+      {
+        "name": "VietnamWorks_sync + VietnamWorks_async",
+        "count": 373,
+        "percent_of_jobs": 44.56
+      },
+      {
+        "name": "ITviec",
+        "count": 299,
+        "percent_of_jobs": 35.72
+      },
+      {
+        "name": "VietnamWorks_async",
+        "count": 81,
+        "percent_of_jobs": 9.68
+      },
+      {
+        "name": "VietnamWorks_sync",
+        "count": 56,
+        "percent_of_jobs": 6.69
+      },
+      {
+        "name": "TopDev",
+        "count": 28,
+        "percent_of_jobs": 3.35
+      }
+    ],
+    "years_of_exp": {
+      "count": 691,
+      "min": 0.0,
+      "max": 80.0,
+      "mean": 4.23,
+      "median": 4.0
+    }
+  },
+  "coverage": {
+    "role_category": {
+      "jobs_with_value": 813,
+      "percent_of_jobs": 97.13,
+      "unique_values": 12
+    },
+    "experience_level": {
+      "jobs_with_value": 680,
+      "percent_of_jobs": 81.24,
+      "unique_values": 8
+    },
+    "languages": {
+      "jobs_with_value": 735,
+      "percent_of_jobs": 87.81,
+      "unique_values": 19
+    },
+    "frameworks": {
+      "jobs_with_value": 237,
+      "percent_of_jobs": 28.32,
+      "unique_values": 18
+    },
+    "data_ai": {
+      "jobs_with_value": 327,
+      "percent_of_jobs": 39.07,
+      "unique_values": 23
+    },
+    "databases": {
+      "jobs_with_value": 238,
+      "percent_of_jobs": 28.43,
+      "unique_values": 13
+    },
+    "cloud": {
+      "jobs_with_value": 205,
+      "percent_of_jobs": 24.49,
+      "unique_values": 3
+    },
+    "devops_tools": {
+      "jobs_with_value": 339,
+      "percent_of_jobs": 40.5,
+      "unique_values": 10
+    },
+    "soft_skills": {
+      "jobs_with_value": 773,
+      "percent_of_jobs": 92.35,
+      "unique_values": 15
+    },
+    "language_requirement": {
+      "jobs_with_value": 495,
+      "percent_of_jobs": 59.14,
+      "unique_values": 5
+    },
+    "methodology": {
+      "jobs_with_value": 236,
+      "percent_of_jobs": 28.2,
+      "unique_values": 9
+    },
+    "work_style": {
+      "jobs_with_value": 500,
+      "percent_of_jobs": 59.74,
+      "unique_values": 14
+    },
+    "education": {
+      "jobs_with_value": 600,
+      "percent_of_jobs": 71.68,
+      "unique_values": 4
+    }
+  },
+  "top_values": {
+    "source": [
+      {
+        "name": "VietnamWorks_sync + VietnamWorks_async",
+        "count": 373,
+        "percent_of_jobs": 44.56
+      },
+      {
+        "name": "ITviec",
+        "count": 299,
+        "percent_of_jobs": 35.72
+      },
+      {
+        "name": "VietnamWorks_async",
+        "count": 81,
+        "percent_of_jobs": 9.68
+      },
+      {
+        "name": "VietnamWorks_sync",
+        "count": 56,
+        "percent_of_jobs": 6.69
+      },
+      {
+        "name": "TopDev",
+        "count": 28,
+        "percent_of_jobs": 3.35
+      }
+    ],
+    "position": [
+      {
+        "name": "software engineer",
+        "count": 338,
+        "percent_of_jobs": 40.38
+      },
+      {
+        "name": "ai engineer",
+        "count": 142,
+        "percent_of_jobs": 16.97
+      },
+      {
+        "name": "data engineer",
+        "count": 105,
+        "percent_of_jobs": 12.54
+      },
+      {
+        "name": "ba",
+        "count": 62,
+        "percent_of_jobs": 7.41
+      },
+      {
+        "name": "data science",
+        "count": 57,
+        "percent_of_jobs": 6.81
+      },
+      {
+        "name": "qa",
+        "count": 57,
+        "percent_of_jobs": 6.81
+      },
+      {
+        "name": "security",
+        "count": 46,
+        "percent_of_jobs": 5.5
+      },
+      {
+        "name": "da",
+        "count": 22,
+        "percent_of_jobs": 2.63
+      },
+      {
+        "name": "machine learning engineer",
+        "count": 8,
+        "percent_of_jobs": 0.96
+      }
+    ],
+    "original_level": [
+      {
+        "name": "nhân viên",
+        "count": 406,
+        "percent_of_jobs": 48.51
+      },
+      {
+        "name": "Unknown",
+        "count": 333,
+        "percent_of_jobs": 39.78
+      },
+      {
+        "name": "trưởng phòng",
+        "count": 38,
+        "percent_of_jobs": 4.54
+      },
+      {
+        "name": "mới tốt nghiệp",
+        "count": 19,
+        "percent_of_jobs": 2.27
+      },
+      {
+        "name": "thực tập sinhsinh viên",
+        "count": 9,
+        "percent_of_jobs": 1.08
+      },
+      {
+        "name": "middle senior",
+        "count": 5,
+        "percent_of_jobs": 0.6
+      },
+      {
+        "name": "senior",
+        "count": 5,
+        "percent_of_jobs": 0.6
+      },
+      {
+        "name": "giám đốc và cấp cao hơn",
+        "count": 4,
+        "percent_of_jobs": 0.48
+      },
+      {
+        "name": "fresher junior middle senior",
+        "count": 3,
+        "percent_of_jobs": 0.36
+      },
+      {
+        "name": "fresher junior",
+        "count": 3,
+        "percent_of_jobs": 0.36
+      },
+      {
+        "name": "middle",
+        "count": 3,
+        "percent_of_jobs": 0.36
+      },
+      {
+        "name": "junior middle",
+        "count": 3,
+        "percent_of_jobs": 0.36
+      },
+      {
+        "name": "junior middle senior",
+        "count": 2,
+        "percent_of_jobs": 0.24
+      },
+      {
+        "name": "intern",
+        "count": 1,
+        "percent_of_jobs": 0.12
+      },
+      {
+        "name": "fresher",
+        "count": 1,
+        "percent_of_jobs": 0.12
+      }
+    ],
+    "role_category": [
+      {
+        "name": "software engineering",
+        "count": 396,
+        "percent_of_jobs": 47.31
+      },
+      {
+        "name": "ai/ml engineering",
+        "count": 233,
+        "percent_of_jobs": 27.84
+      },
+      {
+        "name": "quality assurance",
+        "count": 220,
+        "percent_of_jobs": 26.28
+      },
+      {
+        "name": "data engineering",
+        "count": 189,
+        "percent_of_jobs": 22.58
+      },
+      {
+        "name": "business analysis",
+        "count": 159,
+        "percent_of_jobs": 19.0
+      },
+      {
+        "name": "data science",
+        "count": 133,
+        "percent_of_jobs": 15.89
+      },
+      {
+        "name": "data analysis",
+        "count": 96,
+        "percent_of_jobs": 11.47
+      },
+      {
+        "name": "cybersecurity",
+        "count": 91,
+        "percent_of_jobs": 10.87
+      },
+      {
+        "name": "embedded system",
+        "count": 62,
+        "percent_of_jobs": 7.41
+      },
+      {
+        "name": "devops/sre",
+        "count": 60,
+        "percent_of_jobs": 7.17
+      },
+      {
+        "name": "project management",
+        "count": 39,
+        "percent_of_jobs": 4.66
+      },
+      {
+        "name": "product management",
+        "count": 22,
+        "percent_of_jobs": 2.63
+      }
+    ],
+    "experience_level": [
+      {
+        "name": "senior",
+        "count": 377,
+        "percent_of_jobs": 45.04
+      },
+      {
+        "name": "manager",
+        "count": 323,
+        "percent_of_jobs": 38.59
+      },
+      {
+        "name": "middle",
+        "count": 229,
+        "percent_of_jobs": 27.36
+      },
+      {
+        "name": "lead/principal",
+        "count": 182,
+        "percent_of_jobs": 21.74
+      },
+      {
+        "name": "junior",
+        "count": 69,
+        "percent_of_jobs": 8.24
+      },
+      {
+        "name": "fresher",
+        "count": 55,
+        "percent_of_jobs": 6.57
+      },
+      {
+        "name": "director",
+        "count": 32,
+        "percent_of_jobs": 3.82
+      },
+      {
+        "name": "intern",
+        "count": 19,
+        "percent_of_jobs": 2.27
+      }
+    ],
+    "languages": [
+      {
+        "name": "python",
+        "count": 365,
+        "percent_of_jobs": 43.61
+      },
+      {
+        "name": "sql",
+        "count": 307,
+        "percent_of_jobs": 36.68
+      },
+      {
+        "name": "java",
+        "count": 146,
+        "percent_of_jobs": 17.44
+      },
+      {
+        "name": "c++",
+        "count": 104,
+        "percent_of_jobs": 12.43
+      },
+      {
+        "name": "golang",
+        "count": 99,
+        "percent_of_jobs": 11.83
+      },
+      {
+        "name": "javascript",
+        "count": 78,
+        "percent_of_jobs": 9.32
+      },
+      {
+        "name": "c#",
+        "count": 76,
+        "percent_of_jobs": 9.08
+      },
+      {
+        "name": "html/css",
+        "count": 63,
+        "percent_of_jobs": 7.53
+      },
+      {
+        "name": "typescript",
+        "count": 53,
+        "percent_of_jobs": 6.33
+      },
+      {
+        "name": "r",
+        "count": 42,
+        "percent_of_jobs": 5.02
+      },
+      {
+        "name": "shell/bash",
+        "count": 21,
+        "percent_of_jobs": 2.51
+      },
+      {
+        "name": "php",
+        "count": 19,
+        "percent_of_jobs": 2.27
+      },
+      {
+        "name": "scala",
+        "count": 11,
+        "percent_of_jobs": 1.31
+      },
+      {
+        "name": "kotlin",
+        "count": 10,
+        "percent_of_jobs": 1.19
+      },
+      {
+        "name": "dart",
+        "count": 5,
+        "percent_of_jobs": 0.6
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "count": 76,
+        "percent_of_jobs": 9.08
+      },
+      {
+        "name": ".net",
+        "count": 72,
+        "percent_of_jobs": 8.6
+      },
+      {
+        "name": "node.js",
+        "count": 45,
+        "percent_of_jobs": 5.38
+      },
+      {
+        "name": "langchain",
+        "count": 42,
+        "percent_of_jobs": 5.02
+      },
+      {
+        "name": "spring boot",
+        "count": 39,
+        "percent_of_jobs": 4.66
+      },
+      {
+        "name": "angular",
+        "count": 29,
+        "percent_of_jobs": 3.46
+      },
+      {
+        "name": "spring",
+        "count": 26,
+        "percent_of_jobs": 3.11
+      },
+      {
+        "name": "langgraph",
+        "count": 25,
+        "percent_of_jobs": 2.99
+      },
+      {
+        "name": "fastapi",
+        "count": 23,
+        "percent_of_jobs": 2.75
+      },
+      {
+        "name": "vue.js",
+        "count": 23,
+        "percent_of_jobs": 2.75
+      },
+      {
+        "name": "next.js",
+        "count": 19,
+        "percent_of_jobs": 2.27
+      },
+      {
+        "name": "nest.js",
+        "count": 15,
+        "percent_of_jobs": 1.79
+      },
+      {
+        "name": "flutter",
+        "count": 14,
+        "percent_of_jobs": 1.67
+      },
+      {
+        "name": "react native",
+        "count": 12,
+        "percent_of_jobs": 1.43
+      },
+      {
+        "name": "flask",
+        "count": 10,
+        "percent_of_jobs": 1.19
+      }
+    ],
+    "data_ai": [
+      {
+        "name": "machine learning",
+        "count": 140,
+        "percent_of_jobs": 16.73
+      },
+      {
+        "name": "llm",
+        "count": 103,
+        "percent_of_jobs": 12.31
+      },
+      {
+        "name": "power bi",
+        "count": 90,
+        "percent_of_jobs": 10.75
+      },
+      {
+        "name": "rag",
+        "count": 65,
+        "percent_of_jobs": 7.77
+      },
+      {
+        "name": "tensorflow",
+        "count": 60,
+        "percent_of_jobs": 7.17
+      },
+      {
+        "name": "pytorch",
+        "count": 56,
+        "percent_of_jobs": 6.69
+      },
+      {
+        "name": "nlp",
+        "count": 52,
+        "percent_of_jobs": 6.21
+      },
+      {
+        "name": "tableau",
+        "count": 51,
+        "percent_of_jobs": 6.09
+      },
+      {
+        "name": "etl",
+        "count": 48,
+        "percent_of_jobs": 5.73
+      },
+      {
+        "name": "deep learning",
+        "count": 47,
+        "percent_of_jobs": 5.62
+      },
+      {
+        "name": "spark",
+        "count": 46,
+        "percent_of_jobs": 5.5
+      },
+      {
+        "name": "mlops",
+        "count": 46,
+        "percent_of_jobs": 5.5
+      },
+      {
+        "name": "computer vision",
+        "count": 44,
+        "percent_of_jobs": 5.26
+      },
+      {
+        "name": "langchain",
+        "count": 42,
+        "percent_of_jobs": 5.02
+      },
+      {
+        "name": "data warehouse",
+        "count": 37,
+        "percent_of_jobs": 4.42
+      }
+    ],
+    "databases": [
+      {
+        "name": "oracle",
+        "count": 95,
+        "percent_of_jobs": 11.35
+      },
+      {
+        "name": "postgresql",
+        "count": 90,
+        "percent_of_jobs": 10.75
+      },
+      {
+        "name": "mysql",
+        "count": 67,
+        "percent_of_jobs": 8.0
+      },
+      {
+        "name": "sql server",
+        "count": 59,
+        "percent_of_jobs": 7.05
+      },
+      {
+        "name": "mongodb",
+        "count": 55,
+        "percent_of_jobs": 6.57
+      },
+      {
+        "name": "redis",
+        "count": 42,
+        "percent_of_jobs": 5.02
+      },
+      {
+        "name": "elasticsearch",
+        "count": 22,
+        "percent_of_jobs": 2.63
+      },
+      {
+        "name": "firebase",
+        "count": 12,
+        "percent_of_jobs": 1.43
+      },
+      {
+        "name": "milvus",
+        "count": 9,
+        "percent_of_jobs": 1.08
+      },
+      {
+        "name": "pinecone",
+        "count": 7,
+        "percent_of_jobs": 0.84
+      },
+      {
+        "name": "qdrant",
+        "count": 7,
+        "percent_of_jobs": 0.84
+      },
+      {
+        "name": "weaviate",
+        "count": 5,
+        "percent_of_jobs": 0.6
+      },
+      {
+        "name": "dataverse",
+        "count": 1,
+        "percent_of_jobs": 0.12
+      }
+    ],
+    "cloud": [
+      {
+        "name": "aws",
+        "count": 163,
+        "percent_of_jobs": 19.47
+      },
+      {
+        "name": "azure",
+        "count": 113,
+        "percent_of_jobs": 13.5
+      },
+      {
+        "name": "gcp",
+        "count": 81,
+        "percent_of_jobs": 9.68
+      }
+    ],
+    "devops_tools": [
+      {
+        "name": "ci/cd",
+        "count": 188,
+        "percent_of_jobs": 22.46
+      },
+      {
+        "name": "docker",
+        "count": 133,
+        "percent_of_jobs": 15.89
+      },
+      {
+        "name": "microservices",
+        "count": 93,
+        "percent_of_jobs": 11.11
+      },
+      {
+        "name": "kubernetes",
+        "count": 91,
+        "percent_of_jobs": 10.87
+      },
+      {
+        "name": "linux",
+        "count": 82,
+        "percent_of_jobs": 9.8
+      },
+      {
+        "name": "kafka",
+        "count": 64,
+        "percent_of_jobs": 7.65
+      },
+      {
+        "name": "jenkins",
+        "count": 28,
+        "percent_of_jobs": 3.35
+      },
+      {
+        "name": "terraform",
+        "count": 19,
+        "percent_of_jobs": 2.27
+      },
+      {
+        "name": "rabbitmq",
+        "count": 17,
+        "percent_of_jobs": 2.03
+      },
+      {
+        "name": "nginx",
+        "count": 5,
+        "percent_of_jobs": 0.6
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "communication",
+        "count": 459,
+        "percent_of_jobs": 54.84
+      },
+      {
+        "name": "analytical",
+        "count": 398,
+        "percent_of_jobs": 47.55
+      },
+      {
+        "name": "teamwork",
+        "count": 369,
+        "percent_of_jobs": 44.09
+      },
+      {
+        "name": "mentoring",
+        "count": 334,
+        "percent_of_jobs": 39.9
+      },
+      {
+        "name": "work independently",
+        "count": 278,
+        "percent_of_jobs": 33.21
+      },
+      {
+        "name": "responsibility",
+        "count": 259,
+        "percent_of_jobs": 30.94
+      },
+      {
+        "name": "problem solving",
+        "count": 240,
+        "percent_of_jobs": 28.67
+      },
+      {
+        "name": "leadership",
+        "count": 193,
+        "percent_of_jobs": 23.06
+      },
+      {
+        "name": "adaptability",
+        "count": 157,
+        "percent_of_jobs": 18.76
+      },
+      {
+        "name": "creativity",
+        "count": 131,
+        "percent_of_jobs": 15.65
+      },
+      {
+        "name": "time management",
+        "count": 71,
+        "percent_of_jobs": 8.48
+      },
+      {
+        "name": "presentation",
+        "count": 71,
+        "percent_of_jobs": 8.48
+      },
+      {
+        "name": "work under pressure",
+        "count": 47,
+        "percent_of_jobs": 5.62
+      },
+      {
+        "name": "critical thinking",
+        "count": 41,
+        "percent_of_jobs": 4.9
+      },
+      {
+        "name": "negotiation",
+        "count": 27,
+        "percent_of_jobs": 3.23
+      }
+    ],
+    "language_requirement": [
+      {
+        "name": "english",
+        "count": 472,
+        "percent_of_jobs": 56.39
+      },
+      {
+        "name": "japanese",
+        "count": 40,
+        "percent_of_jobs": 4.78
+      },
+      {
+        "name": "chinese",
+        "count": 27,
+        "percent_of_jobs": 3.23
+      },
+      {
+        "name": "korean",
+        "count": 13,
+        "percent_of_jobs": 1.55
+      },
+      {
+        "name": "french",
+        "count": 2,
+        "percent_of_jobs": 0.24
+      }
+    ],
+    "methodology": [
+      {
+        "name": "devops",
+        "count": 115,
+        "percent_of_jobs": 13.74
+      },
+      {
+        "name": "agile",
+        "count": 101,
+        "percent_of_jobs": 12.07
+      },
+      {
+        "name": "sdlc",
+        "count": 44,
+        "percent_of_jobs": 5.26
+      },
+      {
+        "name": "scrum",
+        "count": 36,
+        "percent_of_jobs": 4.3
+      },
+      {
+        "name": "safe",
+        "count": 16,
+        "percent_of_jobs": 1.91
+      },
+      {
+        "name": "ddd",
+        "count": 9,
+        "percent_of_jobs": 1.08
+      },
+      {
+        "name": "waterfall",
+        "count": 9,
+        "percent_of_jobs": 1.08
+      },
+      {
+        "name": "kanban",
+        "count": 3,
+        "percent_of_jobs": 0.36
+      },
+      {
+        "name": "lean",
+        "count": 1,
+        "percent_of_jobs": 0.12
+      }
+    ],
+    "work_style": [
+      {
+        "name": "documentation",
+        "count": 294,
+        "percent_of_jobs": 35.13
+      },
+      {
+        "name": "solid",
+        "count": 129,
+        "percent_of_jobs": 15.41
+      },
+      {
+        "name": "rest api",
+        "count": 86,
+        "percent_of_jobs": 10.27
+      },
+      {
+        "name": "system design",
+        "count": 64,
+        "percent_of_jobs": 7.65
+      },
+      {
+        "name": "remote/hybrid",
+        "count": 57,
+        "percent_of_jobs": 6.81
+      },
+      {
+        "name": "oop",
+        "count": 47,
+        "percent_of_jobs": 5.62
+      },
+      {
+        "name": "unit test",
+        "count": 36,
+        "percent_of_jobs": 4.3
+      },
+      {
+        "name": "code review",
+        "count": 27,
+        "percent_of_jobs": 3.23
+      },
+      {
+        "name": "graphql",
+        "count": 23,
+        "percent_of_jobs": 2.75
+      },
+      {
+        "name": "clean code",
+        "count": 17,
+        "percent_of_jobs": 2.03
+      },
+      {
+        "name": "design patterns",
+        "count": 12,
+        "percent_of_jobs": 1.43
+      },
+      {
+        "name": "tdd",
+        "count": 8,
+        "percent_of_jobs": 0.96
+      },
+      {
+        "name": "bdd",
+        "count": 2,
+        "percent_of_jobs": 0.24
+      },
+      {
+        "name": "pair programming",
+        "count": 1,
+        "percent_of_jobs": 0.12
+      }
+    ],
+    "education": [
+      {
+        "name": "bachelor's",
+        "count": 522,
+        "percent_of_jobs": 62.37
+      },
+      {
+        "name": "computer science",
+        "count": 442,
+        "percent_of_jobs": 52.81
+      },
+      {
+        "name": "master's/phd",
+        "count": 77,
+        "percent_of_jobs": 9.2
+      },
+      {
+        "name": "college",
+        "count": 26,
+        "percent_of_jobs": 3.11
+      }
+    ]
+  },
+  "average_years_by_group": {
+    "role_category": [
+      {
+        "name": "data science",
+        "count": 113,
+        "average_years": 5.08,
+        "median_years": 4.0
+      },
+      {
+        "name": "ai/ml engineering",
+        "count": 201,
+        "average_years": 4.65,
+        "median_years": 4.0
+      },
+      {
+        "name": "product management",
+        "count": 20,
+        "average_years": 4.55,
+        "median_years": 5.0
+      },
+      {
+        "name": "embedded system",
+        "count": 51,
+        "average_years": 4.47,
+        "median_years": 3.0
+      },
+      {
+        "name": "data engineering",
+        "count": 156,
+        "average_years": 4.35,
+        "median_years": 4.0
+      },
+      {
+        "name": "cybersecurity",
+        "count": 68,
+        "average_years": 4.35,
+        "median_years": 5.0
+      },
+      {
+        "name": "business analysis",
+        "count": 143,
+        "average_years": 4.31,
+        "median_years": 4.0
+      },
+      {
+        "name": "software engineering",
+        "count": 308,
+        "average_years": 4.17,
+        "median_years": 3.0
+      },
+      {
+        "name": "devops/sre",
+        "count": 56,
+        "average_years": 4.12,
+        "median_years": 4.0
+      },
+      {
+        "name": "project management",
+        "count": 35,
+        "average_years": 4.0,
+        "median_years": 5.0
+      },
+      {
+        "name": "data analysis",
+        "count": 81,
+        "average_years": 3.9,
+        "median_years": 3.0
+      },
+      {
+        "name": "quality assurance",
+        "count": 189,
+        "average_years": 3.88,
+        "median_years": 3.0
+      }
+    ],
+    "experience_level": [
+      {
+        "name": "lead/principal",
+        "count": 170,
+        "average_years": 6.03,
+        "median_years": 5.0
+      },
+      {
+        "name": "director",
+        "count": 31,
+        "average_years": 5.52,
+        "median_years": 5.0
+      },
+      {
+        "name": "senior",
+        "count": 342,
+        "average_years": 5.19,
+        "median_years": 5.0
+      },
+      {
+        "name": "manager",
+        "count": 281,
+        "average_years": 4.32,
+        "median_years": 4.0
+      },
+      {
+        "name": "middle",
+        "count": 220,
+        "average_years": 4.27,
+        "median_years": 3.0
+      },
+      {
+        "name": "junior",
+        "count": 51,
+        "average_years": 3.78,
+        "median_years": 3.0
+      },
+      {
+        "name": "fresher",
+        "count": 26,
+        "average_years": 1.77,
+        "median_years": 2.0
+      },
+      {
+        "name": "intern",
+        "count": 7,
+        "average_years": 1.43,
+        "median_years": 1.0
+      }
+    ],
+    "languages": [
+      {
+        "name": "r",
+        "count": 35,
+        "average_years": 5.89,
+        "median_years": 3.0
+      },
+      {
+        "name": "typescript",
+        "count": 45,
+        "average_years": 5.4,
+        "median_years": 4.0
+      },
+      {
+        "name": "java",
+        "count": 118,
+        "average_years": 4.59,
+        "median_years": 4.0
+      },
+      {
+        "name": "python",
+        "count": 295,
+        "average_years": 4.5,
+        "median_years": 4.0
+      },
+      {
+        "name": "javascript",
+        "count": 60,
+        "average_years": 4.05,
+        "median_years": 3.0
+      },
+      {
+        "name": "sql",
+        "count": 263,
+        "average_years": 3.92,
+        "median_years": 3.0
+      },
+      {
+        "name": "golang",
+        "count": 82,
+        "average_years": 3.91,
+        "median_years": 4.0
+      },
+      {
+        "name": "html/css",
+        "count": 53,
+        "average_years": 3.81,
+        "median_years": 3.0
+      },
+      {
+        "name": "shell/bash",
+        "count": 13,
+        "average_years": 3.77,
+        "median_years": 5.0
+      },
+      {
+        "name": "scala",
+        "count": 10,
+        "average_years": 3.7,
+        "median_years": 3.0
+      },
+      {
+        "name": "c++",
+        "count": 80,
+        "average_years": 3.58,
+        "median_years": 3.0
+      },
+      {
+        "name": "php",
+        "count": 13,
+        "average_years": 3.46,
+        "median_years": 3.0
+      },
+      {
+        "name": "kotlin",
+        "count": 8,
+        "average_years": 3.25,
+        "median_years": 2.5
+      },
+      {
+        "name": "c#",
+        "count": 61,
+        "average_years": 3.23,
+        "median_years": 3.0
+      },
+      {
+        "name": "dart",
+        "count": 5,
+        "average_years": 3.2,
+        "median_years": 3.0
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next.js",
+        "count": 16,
+        "average_years": 8.12,
+        "median_years": 5.0
+      },
+      {
+        "name": "langchain",
+        "count": 36,
+        "average_years": 5.78,
+        "median_years": 5.0
+      },
+      {
+        "name": "nest.js",
+        "count": 11,
+        "average_years": 5.55,
+        "median_years": 4.0
+      },
+      {
+        "name": "react",
+        "count": 64,
+        "average_years": 5.06,
+        "median_years": 5.0
+      },
+      {
+        "name": "express",
+        "count": 5,
+        "average_years": 4.8,
+        "median_years": 4.0
+      },
+      {
+        "name": "langgraph",
+        "count": 20,
+        "average_years": 4.6,
+        "median_years": 4.5
+      },
+      {
+        "name": "node.js",
+        "count": 36,
+        "average_years": 4.44,
+        "median_years": 4.0
+      },
+      {
+        "name": "spring boot",
+        "count": 36,
+        "average_years": 4.42,
+        "median_years": 4.0
+      },
+      {
+        "name": ".net",
+        "count": 55,
+        "average_years": 4.04,
+        "median_years": 5.0
+      },
+      {
+        "name": "angular",
+        "count": 25,
+        "average_years": 3.76,
+        "median_years": 4.0
+      },
+      {
+        "name": "vue.js",
+        "count": 21,
+        "average_years": 3.71,
+        "median_years": 4.0
+      },
+      {
+        "name": "spring",
+        "count": 19,
+        "average_years": 3.53,
+        "median_years": 3.0
+      },
+      {
+        "name": "fastapi",
+        "count": 22,
+        "average_years": 3.32,
+        "median_years": 4.0
+      },
+      {
+        "name": "react native",
+        "count": 10,
+        "average_years": 3.3,
+        "median_years": 3.0
+      },
+      {
+        "name": "flutter",
+        "count": 14,
+        "average_years": 3.14,
+        "median_years": 2.5
+      },
+      {
+        "name": "flask",
+        "count": 9,
+        "average_years": 3.0,
+        "median_years": 2.0
+      }
+    ]
+  },
+  "by_source": {
+    "role_category": {
+      "ITviec": [
+        {
+          "name": "ai/ml engineering",
+          "count": 149,
+          "percent_of_jobs": 49.83
+        },
+        {
+          "name": "software engineering",
+          "count": 73,
+          "percent_of_jobs": 24.41
+        },
+        {
+          "name": "quality assurance",
+          "count": 71,
+          "percent_of_jobs": 23.75
+        },
+        {
+          "name": "data science",
+          "count": 63,
+          "percent_of_jobs": 21.07
+        },
+        {
+          "name": "data engineering",
+          "count": 59,
+          "percent_of_jobs": 19.73
+        },
+        {
+          "name": "cybersecurity",
+          "count": 32,
+          "percent_of_jobs": 10.7
+        },
+        {
+          "name": "devops/sre",
+          "count": 30,
+          "percent_of_jobs": 10.03
+        },
+        {
+          "name": "data analysis",
+          "count": 26,
+          "percent_of_jobs": 8.7
+        },
+        {
+          "name": "business analysis",
+          "count": 18,
+          "percent_of_jobs": 6.02
+        },
+        {
+          "name": "embedded system",
+          "count": 15,
+          "percent_of_jobs": 5.02
+        },
+        {
+          "name": "project management",
+          "count": 12,
+          "percent_of_jobs": 4.01
+        },
+        {
+          "name": "product management",
+          "count": 9,
+          "percent_of_jobs": 3.01
+        }
+      ],
+      "TopDev": [
+        {
+          "name": "software engineering",
+          "count": 11,
+          "percent_of_jobs": 39.29
+        },
+        {
+          "name": "quality assurance",
+          "count": 11,
+          "percent_of_jobs": 39.29
+        },
+        {
+          "name": "ai/ml engineering",
+          "count": 9,
+          "percent_of_jobs": 32.14
+        },
+        {
+          "name": "business analysis",
+          "count": 7,
+          "percent_of_jobs": 25.0
+        },
+        {
+          "name": "devops/sre",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "data science",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "cybersecurity",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "product management",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "embedded system",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "data engineering",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "project management",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        }
+      ],
+      "VietnamWorks_async": [
+        {
+          "name": "business analysis",
+          "count": 35,
+          "percent_of_jobs": 43.21
+        },
+        {
+          "name": "quality assurance",
+          "count": 33,
+          "percent_of_jobs": 40.74
+        },
+        {
+          "name": "data analysis",
+          "count": 9,
+          "percent_of_jobs": 11.11
+        },
+        {
+          "name": "data engineering",
+          "count": 9,
+          "percent_of_jobs": 11.11
+        },
+        {
+          "name": "software engineering",
+          "count": 7,
+          "percent_of_jobs": 8.64
+        },
+        {
+          "name": "embedded system",
+          "count": 6,
+          "percent_of_jobs": 7.41
+        },
+        {
+          "name": "ai/ml engineering",
+          "count": 5,
+          "percent_of_jobs": 6.17
+        },
+        {
+          "name": "cybersecurity",
+          "count": 5,
+          "percent_of_jobs": 6.17
+        },
+        {
+          "name": "data science",
+          "count": 3,
+          "percent_of_jobs": 3.7
+        },
+        {
+          "name": "devops/sre",
+          "count": 3,
+          "percent_of_jobs": 3.7
+        },
+        {
+          "name": "product management",
+          "count": 1,
+          "percent_of_jobs": 1.23
+        },
+        {
+          "name": "project management",
+          "count": 1,
+          "percent_of_jobs": 1.23
+        }
+      ],
+      "VietnamWorks_sync": [
+        {
+          "name": "software engineering",
+          "count": 32,
+          "percent_of_jobs": 57.14
+        },
+        {
+          "name": "data engineering",
+          "count": 21,
+          "percent_of_jobs": 37.5
+        },
+        {
+          "name": "data science",
+          "count": 9,
+          "percent_of_jobs": 16.07
+        },
+        {
+          "name": "ai/ml engineering",
+          "count": 9,
+          "percent_of_jobs": 16.07
+        },
+        {
+          "name": "quality assurance",
+          "count": 9,
+          "percent_of_jobs": 16.07
+        },
+        {
+          "name": "data analysis",
+          "count": 8,
+          "percent_of_jobs": 14.29
+        },
+        {
+          "name": "business analysis",
+          "count": 8,
+          "percent_of_jobs": 14.29
+        },
+        {
+          "name": "cybersecurity",
+          "count": 7,
+          "percent_of_jobs": 12.5
+        },
+        {
+          "name": "project management",
+          "count": 4,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "devops/sre",
+          "count": 2,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "embedded system",
+          "count": 2,
+          "percent_of_jobs": 3.57
+        }
+      ],
+      "VietnamWorks_sync + VietnamWorks_async": [
+        {
+          "name": "software engineering",
+          "count": 273,
+          "percent_of_jobs": 73.19
+        },
+        {
+          "name": "data engineering",
+          "count": 99,
+          "percent_of_jobs": 26.54
+        },
+        {
+          "name": "quality assurance",
+          "count": 96,
+          "percent_of_jobs": 25.74
+        },
+        {
+          "name": "business analysis",
+          "count": 91,
+          "percent_of_jobs": 24.4
+        },
+        {
+          "name": "ai/ml engineering",
+          "count": 61,
+          "percent_of_jobs": 16.35
+        },
+        {
+          "name": "data science",
+          "count": 56,
+          "percent_of_jobs": 15.01
+        },
+        {
+          "name": "data analysis",
+          "count": 53,
+          "percent_of_jobs": 14.21
+        },
+        {
+          "name": "cybersecurity",
+          "count": 45,
+          "percent_of_jobs": 12.06
+        },
+        {
+          "name": "embedded system",
+          "count": 38,
+          "percent_of_jobs": 10.19
+        },
+        {
+          "name": "devops/sre",
+          "count": 22,
+          "percent_of_jobs": 5.9
+        },
+        {
+          "name": "project management",
+          "count": 21,
+          "percent_of_jobs": 5.63
+        },
+        {
+          "name": "product management",
+          "count": 10,
+          "percent_of_jobs": 2.68
+        }
+      ]
+    },
+    "languages": {
+      "ITviec": [
+        {
+          "name": "python",
+          "count": 173,
+          "percent_of_jobs": 57.86
+        },
+        {
+          "name": "sql",
+          "count": 109,
+          "percent_of_jobs": 36.45
+        },
+        {
+          "name": "java",
+          "count": 54,
+          "percent_of_jobs": 18.06
+        },
+        {
+          "name": "javascript",
+          "count": 32,
+          "percent_of_jobs": 10.7
+        },
+        {
+          "name": "c++",
+          "count": 30,
+          "percent_of_jobs": 10.03
+        },
+        {
+          "name": "golang",
+          "count": 30,
+          "percent_of_jobs": 10.03
+        },
+        {
+          "name": "typescript",
+          "count": 21,
+          "percent_of_jobs": 7.02
+        },
+        {
+          "name": "c#",
+          "count": 16,
+          "percent_of_jobs": 5.35
+        },
+        {
+          "name": "html/css",
+          "count": 14,
+          "percent_of_jobs": 4.68
+        },
+        {
+          "name": "kotlin",
+          "count": 7,
+          "percent_of_jobs": 2.34
+        },
+        {
+          "name": "shell/bash",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "scala",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "php",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "r",
+          "count": 5,
+          "percent_of_jobs": 1.67
+        },
+        {
+          "name": "ruby",
+          "count": 3,
+          "percent_of_jobs": 1.0
+        }
+      ],
+      "TopDev": [
+        {
+          "name": "python",
+          "count": 7,
+          "percent_of_jobs": 25.0
+        },
+        {
+          "name": "sql",
+          "count": 6,
+          "percent_of_jobs": 21.43
+        },
+        {
+          "name": "typescript",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "c++",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "c#",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "javascript",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "r",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "html/css",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "java",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "php",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "apex",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "kotlin",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "shell/bash",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        }
+      ],
+      "VietnamWorks_async": [
+        {
+          "name": "python",
+          "count": 29,
+          "percent_of_jobs": 35.8
+        },
+        {
+          "name": "sql",
+          "count": 27,
+          "percent_of_jobs": 33.33
+        },
+        {
+          "name": "golang",
+          "count": 25,
+          "percent_of_jobs": 30.86
+        },
+        {
+          "name": "r",
+          "count": 11,
+          "percent_of_jobs": 13.58
+        },
+        {
+          "name": "c++",
+          "count": 8,
+          "percent_of_jobs": 9.88
+        },
+        {
+          "name": "java",
+          "count": 6,
+          "percent_of_jobs": 7.41
+        },
+        {
+          "name": "c#",
+          "count": 6,
+          "percent_of_jobs": 7.41
+        },
+        {
+          "name": "javascript",
+          "count": 3,
+          "percent_of_jobs": 3.7
+        },
+        {
+          "name": "php",
+          "count": 2,
+          "percent_of_jobs": 2.47
+        },
+        {
+          "name": "shell/bash",
+          "count": 1,
+          "percent_of_jobs": 1.23
+        },
+        {
+          "name": "html/css",
+          "count": 1,
+          "percent_of_jobs": 1.23
+        }
+      ],
+      "VietnamWorks_sync": [
+        {
+          "name": "sql",
+          "count": 17,
+          "percent_of_jobs": 30.36
+        },
+        {
+          "name": "python",
+          "count": 17,
+          "percent_of_jobs": 30.36
+        },
+        {
+          "name": "java",
+          "count": 11,
+          "percent_of_jobs": 19.64
+        },
+        {
+          "name": "html/css",
+          "count": 10,
+          "percent_of_jobs": 17.86
+        },
+        {
+          "name": "golang",
+          "count": 8,
+          "percent_of_jobs": 14.29
+        },
+        {
+          "name": "c#",
+          "count": 6,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "r",
+          "count": 6,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "javascript",
+          "count": 5,
+          "percent_of_jobs": 8.93
+        },
+        {
+          "name": "typescript",
+          "count": 4,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "c++",
+          "count": 3,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "php",
+          "count": 2,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "apex",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "kotlin",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "rust",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "scala",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        }
+      ],
+      "VietnamWorks_sync + VietnamWorks_async": [
+        {
+          "name": "sql",
+          "count": 148,
+          "percent_of_jobs": 39.68
+        },
+        {
+          "name": "python",
+          "count": 139,
+          "percent_of_jobs": 37.27
+        },
+        {
+          "name": "java",
+          "count": 74,
+          "percent_of_jobs": 19.84
+        },
+        {
+          "name": "c++",
+          "count": 60,
+          "percent_of_jobs": 16.09
+        },
+        {
+          "name": "c#",
+          "count": 45,
+          "percent_of_jobs": 12.06
+        },
+        {
+          "name": "javascript",
+          "count": 36,
+          "percent_of_jobs": 9.65
+        },
+        {
+          "name": "html/css",
+          "count": 36,
+          "percent_of_jobs": 9.65
+        },
+        {
+          "name": "golang",
+          "count": 36,
+          "percent_of_jobs": 9.65
+        },
+        {
+          "name": "typescript",
+          "count": 25,
+          "percent_of_jobs": 6.7
+        },
+        {
+          "name": "r",
+          "count": 18,
+          "percent_of_jobs": 4.83
+        },
+        {
+          "name": "shell/bash",
+          "count": 12,
+          "percent_of_jobs": 3.22
+        },
+        {
+          "name": "php",
+          "count": 8,
+          "percent_of_jobs": 2.14
+        },
+        {
+          "name": "dart",
+          "count": 4,
+          "percent_of_jobs": 1.07
+        },
+        {
+          "name": "scala",
+          "count": 4,
+          "percent_of_jobs": 1.07
+        },
+        {
+          "name": "ruby",
+          "count": 2,
+          "percent_of_jobs": 0.54
+        }
+      ]
+    },
+    "frameworks": {
+      "ITviec": [
+        {
+          "name": "react",
+          "count": 30,
+          "percent_of_jobs": 10.03
+        },
+        {
+          "name": "langchain",
+          "count": 28,
+          "percent_of_jobs": 9.36
+        },
+        {
+          "name": "node.js",
+          "count": 24,
+          "percent_of_jobs": 8.03
+        },
+        {
+          "name": ".net",
+          "count": 16,
+          "percent_of_jobs": 5.35
+        },
+        {
+          "name": "spring boot",
+          "count": 15,
+          "percent_of_jobs": 5.02
+        },
+        {
+          "name": "fastapi",
+          "count": 15,
+          "percent_of_jobs": 5.02
+        },
+        {
+          "name": "langgraph",
+          "count": 14,
+          "percent_of_jobs": 4.68
+        },
+        {
+          "name": "next.js",
+          "count": 10,
+          "percent_of_jobs": 3.34
+        },
+        {
+          "name": "angular",
+          "count": 9,
+          "percent_of_jobs": 3.01
+        },
+        {
+          "name": "nest.js",
+          "count": 7,
+          "percent_of_jobs": 2.34
+        },
+        {
+          "name": "spring",
+          "count": 7,
+          "percent_of_jobs": 2.34
+        },
+        {
+          "name": "flutter",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "react native",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "vue.js",
+          "count": 6,
+          "percent_of_jobs": 2.01
+        },
+        {
+          "name": "flask",
+          "count": 5,
+          "percent_of_jobs": 1.67
+        }
+      ],
+      "TopDev": [
+        {
+          "name": ".net",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "node.js",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "langchain",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "langgraph",
+          "count": 2,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "spring boot",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "react",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "nest.js",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        }
+      ],
+      "VietnamWorks_async": [
+        {
+          "name": ".net",
+          "count": 2,
+          "percent_of_jobs": 2.47
+        }
+      ],
+      "VietnamWorks_sync": [
+        {
+          "name": ".net",
+          "count": 5,
+          "percent_of_jobs": 8.93
+        },
+        {
+          "name": "spring",
+          "count": 4,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "react",
+          "count": 4,
+          "percent_of_jobs": 7.14
+        },
+        {
+          "name": "angular",
+          "count": 3,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "vue.js",
+          "count": 3,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "react native",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "langchain",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "langgraph",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        },
+        {
+          "name": "express",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        }
+      ],
+      "VietnamWorks_sync + VietnamWorks_async": [
+        {
+          "name": ".net",
+          "count": 46,
+          "percent_of_jobs": 12.33
+        },
+        {
+          "name": "react",
+          "count": 41,
+          "percent_of_jobs": 10.99
+        },
+        {
+          "name": "spring boot",
+          "count": 23,
+          "percent_of_jobs": 6.17
+        },
+        {
+          "name": "node.js",
+          "count": 18,
+          "percent_of_jobs": 4.83
+        },
+        {
+          "name": "angular",
+          "count": 17,
+          "percent_of_jobs": 4.56
+        },
+        {
+          "name": "spring",
+          "count": 15,
+          "percent_of_jobs": 4.02
+        },
+        {
+          "name": "vue.js",
+          "count": 14,
+          "percent_of_jobs": 3.75
+        },
+        {
+          "name": "langchain",
+          "count": 11,
+          "percent_of_jobs": 2.95
+        },
+        {
+          "name": "next.js",
+          "count": 9,
+          "percent_of_jobs": 2.41
+        },
+        {
+          "name": "langgraph",
+          "count": 8,
+          "percent_of_jobs": 2.14
+        },
+        {
+          "name": "fastapi",
+          "count": 8,
+          "percent_of_jobs": 2.14
+        },
+        {
+          "name": "flutter",
+          "count": 8,
+          "percent_of_jobs": 2.14
+        },
+        {
+          "name": "nest.js",
+          "count": 7,
+          "percent_of_jobs": 1.88
+        },
+        {
+          "name": "react native",
+          "count": 5,
+          "percent_of_jobs": 1.34
+        },
+        {
+          "name": "flask",
+          "count": 5,
+          "percent_of_jobs": 1.34
+        }
+      ]
+    },
+    "soft_skills": {
+      "ITviec": [
+        {
+          "name": "communication",
+          "count": 149,
+          "percent_of_jobs": 49.83
+        },
+        {
+          "name": "analytical",
+          "count": 127,
+          "percent_of_jobs": 42.47
+        },
+        {
+          "name": "teamwork",
+          "count": 108,
+          "percent_of_jobs": 36.12
+        },
+        {
+          "name": "mentoring",
+          "count": 93,
+          "percent_of_jobs": 31.1
+        },
+        {
+          "name": "responsibility",
+          "count": 88,
+          "percent_of_jobs": 29.43
+        },
+        {
+          "name": "work independently",
+          "count": 86,
+          "percent_of_jobs": 28.76
+        },
+        {
+          "name": "problem solving",
+          "count": 85,
+          "percent_of_jobs": 28.43
+        },
+        {
+          "name": "leadership",
+          "count": 67,
+          "percent_of_jobs": 22.41
+        },
+        {
+          "name": "creativity",
+          "count": 35,
+          "percent_of_jobs": 11.71
+        },
+        {
+          "name": "adaptability",
+          "count": 32,
+          "percent_of_jobs": 10.7
+        },
+        {
+          "name": "presentation",
+          "count": 22,
+          "percent_of_jobs": 7.36
+        },
+        {
+          "name": "critical thinking",
+          "count": 15,
+          "percent_of_jobs": 5.02
+        },
+        {
+          "name": "time management",
+          "count": 14,
+          "percent_of_jobs": 4.68
+        },
+        {
+          "name": "work under pressure",
+          "count": 7,
+          "percent_of_jobs": 2.34
+        },
+        {
+          "name": "negotiation",
+          "count": 2,
+          "percent_of_jobs": 0.67
+        }
+      ],
+      "TopDev": [
+        {
+          "name": "communication",
+          "count": 14,
+          "percent_of_jobs": 50.0
+        },
+        {
+          "name": "analytical",
+          "count": 13,
+          "percent_of_jobs": 46.43
+        },
+        {
+          "name": "teamwork",
+          "count": 9,
+          "percent_of_jobs": 32.14
+        },
+        {
+          "name": "problem solving",
+          "count": 8,
+          "percent_of_jobs": 28.57
+        },
+        {
+          "name": "work independently",
+          "count": 7,
+          "percent_of_jobs": 25.0
+        },
+        {
+          "name": "mentoring",
+          "count": 6,
+          "percent_of_jobs": 21.43
+        },
+        {
+          "name": "adaptability",
+          "count": 5,
+          "percent_of_jobs": 17.86
+        },
+        {
+          "name": "leadership",
+          "count": 4,
+          "percent_of_jobs": 14.29
+        },
+        {
+          "name": "responsibility",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "presentation",
+          "count": 3,
+          "percent_of_jobs": 10.71
+        },
+        {
+          "name": "time management",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "critical thinking",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "work under pressure",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        },
+        {
+          "name": "creativity",
+          "count": 1,
+          "percent_of_jobs": 3.57
+        }
+      ],
+      "VietnamWorks_async": [
+        {
+          "name": "communication",
+          "count": 50,
+          "percent_of_jobs": 61.73
+        },
+        {
+          "name": "analytical",
+          "count": 42,
+          "percent_of_jobs": 51.85
+        },
+        {
+          "name": "mentoring",
+          "count": 38,
+          "percent_of_jobs": 46.91
+        },
+        {
+          "name": "teamwork",
+          "count": 37,
+          "percent_of_jobs": 45.68
+        },
+        {
+          "name": "work independently",
+          "count": 30,
+          "percent_of_jobs": 37.04
+        },
+        {
+          "name": "responsibility",
+          "count": 26,
+          "percent_of_jobs": 32.1
+        },
+        {
+          "name": "problem solving",
+          "count": 23,
+          "percent_of_jobs": 28.4
+        },
+        {
+          "name": "leadership",
+          "count": 22,
+          "percent_of_jobs": 27.16
+        },
+        {
+          "name": "adaptability",
+          "count": 19,
+          "percent_of_jobs": 23.46
+        },
+        {
+          "name": "presentation",
+          "count": 15,
+          "percent_of_jobs": 18.52
+        },
+        {
+          "name": "creativity",
+          "count": 14,
+          "percent_of_jobs": 17.28
+        },
+        {
+          "name": "time management",
+          "count": 13,
+          "percent_of_jobs": 16.05
+        },
+        {
+          "name": "work under pressure",
+          "count": 6,
+          "percent_of_jobs": 7.41
+        },
+        {
+          "name": "critical thinking",
+          "count": 4,
+          "percent_of_jobs": 4.94
+        }
+      ],
+      "VietnamWorks_sync": [
+        {
+          "name": "teamwork",
+          "count": 33,
+          "percent_of_jobs": 58.93
+        },
+        {
+          "name": "communication",
+          "count": 32,
+          "percent_of_jobs": 57.14
+        },
+        {
+          "name": "analytical",
+          "count": 31,
+          "percent_of_jobs": 55.36
+        },
+        {
+          "name": "work independently",
+          "count": 22,
+          "percent_of_jobs": 39.29
+        },
+        {
+          "name": "mentoring",
+          "count": 21,
+          "percent_of_jobs": 37.5
+        },
+        {
+          "name": "responsibility",
+          "count": 18,
+          "percent_of_jobs": 32.14
+        },
+        {
+          "name": "problem solving",
+          "count": 18,
+          "percent_of_jobs": 32.14
+        },
+        {
+          "name": "adaptability",
+          "count": 14,
+          "percent_of_jobs": 25.0
+        },
+        {
+          "name": "creativity",
+          "count": 14,
+          "percent_of_jobs": 25.0
+        },
+        {
+          "name": "leadership",
+          "count": 12,
+          "percent_of_jobs": 21.43
+        },
+        {
+          "name": "time management",
+          "count": 8,
+          "percent_of_jobs": 14.29
+        },
+        {
+          "name": "negotiation",
+          "count": 5,
+          "percent_of_jobs": 8.93
+        },
+        {
+          "name": "presentation",
+          "count": 3,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "work under pressure",
+          "count": 3,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "critical thinking",
+          "count": 1,
+          "percent_of_jobs": 1.79
+        }
+      ],
+      "VietnamWorks_sync + VietnamWorks_async": [
+        {
+          "name": "communication",
+          "count": 214,
+          "percent_of_jobs": 57.37
+        },
+        {
+          "name": "analytical",
+          "count": 185,
+          "percent_of_jobs": 49.6
+        },
+        {
+          "name": "teamwork",
+          "count": 182,
+          "percent_of_jobs": 48.79
+        },
+        {
+          "name": "mentoring",
+          "count": 176,
+          "percent_of_jobs": 47.18
+        },
+        {
+          "name": "work independently",
+          "count": 133,
+          "percent_of_jobs": 35.66
+        },
+        {
+          "name": "responsibility",
+          "count": 124,
+          "percent_of_jobs": 33.24
+        },
+        {
+          "name": "problem solving",
+          "count": 106,
+          "percent_of_jobs": 28.42
+        },
+        {
+          "name": "leadership",
+          "count": 88,
+          "percent_of_jobs": 23.59
+        },
+        {
+          "name": "adaptability",
+          "count": 87,
+          "percent_of_jobs": 23.32
+        },
+        {
+          "name": "creativity",
+          "count": 67,
+          "percent_of_jobs": 17.96
+        },
+        {
+          "name": "time management",
+          "count": 35,
+          "percent_of_jobs": 9.38
+        },
+        {
+          "name": "work under pressure",
+          "count": 30,
+          "percent_of_jobs": 8.04
+        },
+        {
+          "name": "presentation",
+          "count": 28,
+          "percent_of_jobs": 7.51
+        },
+        {
+          "name": "negotiation",
+          "count": 20,
+          "percent_of_jobs": 5.36
+        },
+        {
+          "name": "critical thinking",
+          "count": 20,
+          "percent_of_jobs": 5.36
+        }
+      ]
+    }
+  }
+}

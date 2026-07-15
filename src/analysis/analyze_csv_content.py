@@ -8,7 +8,13 @@ from collections import Counter, OrderedDict
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-BASE_DIR = r'd:\project scratch data\code scratch data'
+# Add project root to sys.path to support imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+import config
+
+BASE_DIR = config.RAW_DATA_DIR
 
 files = {
     'jobs_dev_top_final.csv': 'TopDev',
@@ -216,7 +222,7 @@ output['tech_term_variants'] = tech_variants_all
 # ============================================================
 # 5. Write to JSON
 # ============================================================
-output_path = os.path.join(BASE_DIR, 'csv_analysis_result.json')
+output_path = os.path.join(config.REPORTS_DIR, 'csv_analysis_result.json')
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
