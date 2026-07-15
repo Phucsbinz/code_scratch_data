@@ -1,7 +1,7 @@
 """
-main.py - Pipeline xử lý 4 file CSV:
-  1. Cleaning (src/analysis/data_cleaning.py)
-  2. Advanced Information Extraction (src/analysis/data_processing.py)
+main.py - Quy trình xử lý 4 tệp CSV:
+  1. Làm sạch dữ liệu (src/analysis/data_cleaning.py)
+  2. Trích xuất thông tin nâng cao (src/analysis/data_processing.py)
 """
 
 import pandas as pd
@@ -20,9 +20,7 @@ import config
 from src.analysis.data_cleaning import clean_dataframe
 from src.analysis.data_processing import extract_keywords
 
-# ============================================================
 # Cấu hình 4 file CSV với đường dẫn tương đối từ data folders
-# ============================================================
 FILES = [
     {
         'input': os.path.join(config.RAW_DATA_DIR, 'jobs_dev_top_final.csv'),
@@ -71,13 +69,13 @@ def save_csv(df, path, label):
         except PermissionError:
             base, ext = os.path.splitext(path)
             save_path = f"{base}_v{attempt+2}{ext}"
-            print(f"  ⚠️ File bị lock, thử lưu: {os.path.basename(save_path)}")
+            print(f"  File bị lock, thử lưu: {os.path.basename(save_path)}")
  
     if saved:
         size_kb = os.path.getsize(save_path) / 1024
-        print(f"  💾 {label}: {os.path.basename(save_path)} ({size_kb:.1f} KB)")
+        print(f"  {label}: {os.path.basename(save_path)} ({size_kb:.1f} KB)")
     else:
-        print(f"  ❌ Không thể lưu {label}! Đóng file rồi chạy lại.")
+        print(f"  Không thể lưu {label}! Đóng file rồi chạy lại.")
 
 def filter_empty_rows(df):
     """
@@ -94,7 +92,7 @@ def filter_empty_rows(df):
 
     df = df[~mask_all_empty].reset_index(drop=True)
     dropped = before_rows - len(df)
-    print(f"  🗑️ Xóa {dropped} dòng phi tech ({before_rows} → {len(df)})")
+    print(f"  Xóa {dropped} dòng không liên quan đến công nghệ ({before_rows} → {len(df)})")
     return df
 
 
@@ -111,20 +109,20 @@ def filter_sparse_cols(df, threshold=0.80):
             cols_to_drop.append((col, total_empty))
 
     if cols_to_drop:
-        print(f"  🗑️ Xóa {len(cols_to_drop)} cột trống > {threshold*100:.0f}%:")
+        print(f"  Xóa {len(cols_to_drop)} cột trống > {threshold*100:.0f}%:")
         for col, rate in cols_to_drop:
             print(f"      - {col} ({rate*100:.1f}% trống)")
         df = df.drop(columns=[c for c, _ in cols_to_drop])
     else:
-        print(f"  ✅ Không có cột nào trống > {threshold*100:.0f}%")
+        print(f"  Không có cột nào trống > {threshold*100:.0f}%")
 
-    print(f"  📊 Kết quả: {df.shape[0]} dòng x {df.shape[1]} cột")
+    print(f"  Kết quả: {df.shape[0]} dòng x {df.shape[1]} cột")
     return df
 
 
 def handle_duplicate_jobs(df):
     """
-    Bước 3: Xử lý các dòng JD có tên công việc trùng nhau (case-insensitive).
+    Bước 3: Xử lý các dòng JD có tên công việc trùng nhau (không phân biệt chữ hoa chữ thường).
     - Chỉ gộp trùng đối với các nguồn: VietnamWorks_sync và VietnamWorks_async.
     - Các cột dạng list "['A', 'B']" (bao gồm cả kỹ năng mềm) sẽ được gộp (union) lại.
     - Các cột source sẽ được nối lại bằng dấu '+'.
@@ -196,7 +194,7 @@ def handle_duplicate_jobs(df):
     df_final = pd.concat([df_keep, df_dedup], ignore_index=True)
 
     dropped = before_rows - len(df_final)
-    print(f"  🔄 Gộp trùng tên (VietnamWorks): Xóa {dropped} dòng ({before_rows} → {len(df_final)})")
+    print(f"  Gộp trùng tên (VietnamWorks): Xóa {dropped} dòng ({before_rows} → {len(df_final)})")
     
     return df_final
 
@@ -206,31 +204,29 @@ def main():
     all_results = []
 
     for i, cfg in enumerate(FILES, 1):
-        print(f"\n{'='*60}")
-        print(f"[{i}/4] {cfg['source']}: {os.path.basename(cfg['input'])}")
-        print(f"{'='*60}")
+        print(f"\n[{i}/4] {cfg['source']}: {os.path.basename(cfg['input'])}")
 
         input_path = cfg['input']
 
         # Đọc CSV
         df = pd.read_csv(input_path, encoding='utf-8')
         
-        # 0. Chuẩn hóa tên cột ngay từ đầu
+        # Chuẩn hóa tên cột ngay từ đầu
         if cfg['rename_cols']:
             df = df.rename(columns=cfg['rename_cols'])
 
-        # 0.1 Xóa các dòng lỗi (chỉ có position, các cột khác đều null)
+        # Xóa các dòng lỗi (chỉ có position, các cột khác đều null)
         content_cols = [c for c in df.columns if c not in ['position', 'job_name']]
         before = len(df)
         df = df.dropna(subset=content_cols, how='all')
         dropped = before - len(df)
         if dropped > 0:
-            print(f"  ⚠️ Xóa {dropped} dòng lỗi (không có dữ liệu)")
+            print(f"  Xóa {dropped} dòng lỗi (không có dữ liệu)")
             df = df.reset_index(drop=True)
             
         print(f"  Đã đọc: {df.shape[0]} dòng x {df.shape[1]} cột")
 
-        # === STEP 1: Cleaning ===
+        # Bước 1: Làm sạch dữ liệu
         start = time.time()
         df_cleaned = clean_dataframe(
             df,
@@ -242,9 +238,9 @@ def main():
         # Lưu file cleaned
         save_csv(df_cleaned, cfg['output_cleaned'], f"Cleaned [{t_clean:.1f}s]")
 
-        # === STEP 2: Advanced Extraction ===
+        # Bước 2: Trích xuất thông tin nâng cao
         start = time.time()
-        print(f"\n  📊 Đang phân tích nội dung chuyên sâu...")
+        print(f"\n  Đang phân tích nội dung chuyên sâu...")
         df_ext = extract_keywords(df_cleaned)
 
         # Chèn các thông tin cơ bản vào đầu df mới
@@ -265,19 +261,16 @@ def main():
 
         all_results.append(df_ext)
 
-    # === STEP 3: Merge tất cả kết quả thành 1 file ===
-    print(f"\n{'='*60}")
-    print("Gộp tất cả dữ liệu đã phân tích thành 1 file...")
+    # Bước 3: Gộp tất cả kết quả thành 1 file
+    print("\nGộp tất cả dữ liệu đã phân tích thành 1 file...")
     df_all = pd.concat(all_results, ignore_index=True)
     
     save_csv(df_all,
              os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis.csv'),
              "FINAL ANALYSIS merged")
 
-    # === STEP 4: Lọc dữ liệu — xóa dòng phi tech + cột trống + xử lý trùng lặp ===
-    print(f"\n{'='*60}")
-    print("Lọc dữ liệu: xóa dòng phi tech + cột trống > 80% + xử lý trùng tên...")
-    print(f"{'='*60}")
+    # Bước 4: Lọc dữ liệu - xóa dòng không liên quan đến công nghệ + cột trống + xử lý trùng lặp
+    print("\nLọc dữ liệu: xóa dòng không liên quan đến công nghệ + cột trống > 80% + xử lý trùng tên...")
     df_filtered = filter_empty_rows(df_all)
     df_filtered = filter_sparse_cols(df_filtered)
     df_filtered = handle_duplicate_jobs(df_filtered)
@@ -287,11 +280,9 @@ def main():
              "FINAL FILTERED")
 
     total = time.time() - start_all
-    print(f"\n{'='*60}")
-    print(f"🎉 Hoàn tất! Tổng thời gian: {total:.1f}s")
-    print(f"{'='*60}")
-    print(f"  📄 all_jobs_final_analysis.csv ({df_all.shape[0]} jobs, {df_all.shape[1]} cột)")
-    print(f"  📄 all_jobs_final_analysis_filtered.csv ({df_filtered.shape[0]} jobs, {df_filtered.shape[1]} cột)")
+    print(f"\nHoàn tất! Tổng thời gian: {total:.1f}s")
+    print(f"  all_jobs_final_analysis.csv ({df_all.shape[0]} jobs, {df_all.shape[1]} cột)")
+    print(f"  all_jobs_final_analysis_filtered.csv ({df_filtered.shape[0]} jobs, {df_filtered.shape[1]} cột)")
 
 
 def main2():
@@ -299,27 +290,21 @@ def main2():
     input_path = os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_final_analysis.csv')
     print(f"Đọc file: {os.path.basename(input_path)}")
     df = pd.read_csv(input_path, encoding='utf-8')
-    print(f"  📄 {df.shape[0]} dòng x {df.shape[1]} cột")
+    print(f"  {df.shape[0]} dòng x {df.shape[1]} cột")
 
-    # Bước 1: Xóa dòng phi tech
-    print(f"\n{'='*60}")
-    print("BƯỚC 1: Xóa dòng không có dữ liệu tech")
-    print(f"{'='*60}")
+    # Bước 1: Xóa dòng không liên quan đến công nghệ
+    print("\nBƯỚC 1: Xóa dòng không có dữ liệu công nghệ")
     df = filter_empty_rows(df)
     save_csv(df,
              os.path.join(config.PROCESSED_DATA_DIR, 'all_jobs_rows_filtered.csv'),
              "ROWS FILTERED")
 
     # Bước 2: Xóa cột trống > 80%
-    print(f"\n{'='*60}")
-    print("BƯỚC 2: Xóa cột trống > 80%")
-    print(f"{'='*60}")
+    print("\nBƯỚC 2: Xóa cột trống > 80%")
     df = filter_sparse_cols(df)
 
     # Bước 3: Xử lý trùng lặp
-    print(f"\n{'='*60}")
-    print("BƯỚC 3: Xử lý các dòng JD trùng tên (Deduplicate)")
-    print(f"{'='*60}")
+    print("\nBƯỚC 3: Xử lý các dòng JD trùng tên (Deduplicate)")
     df = handle_duplicate_jobs(df)
 
     save_csv(df,
