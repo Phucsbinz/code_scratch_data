@@ -1,4 +1,4 @@
-# 🎯 Phân tích Dữ liệu Tuyển dụng IT (IT Job Market Analysis)
+# Phân tích Dữ liệu Tuyển dụng IT (IT Job Market Analysis)
 
 Dự án này thực hiện việc thu thập dữ liệu từ các trang tuyển dụng IT hàng đầu tại Việt Nam (VietnamWorks, ITviec, TopDev), tiến hành làm sạch, trích xuất thông tin chuyên sâu (Ngôn ngữ, Cấp độ, Học vấn, Cơ sở dữ liệu, DevOps, Cloud, Kỹ năng mềm...), xử lý trùng lặp, trực quan hóa dữ liệu và xuất bản báo cáo phân tích xu hướng thị trường cùng khoảng cách kỹ năng (Education Gap).
 
@@ -54,7 +54,7 @@ code scratch data/
 
 ---
 
-## 🛠 Cài đặt Môi trường
+## Cài đặt Môi trường
 
 1. **Cài đặt các thư viện Python phụ thuộc:**
    ```bash
@@ -68,7 +68,7 @@ code scratch data/
 
 ---
 
-## 🚀 Hướng dẫn Sử dụng & Vận hành
+## Hướng dẫn Sử dụng & Vận hành
 
 Dự án cung cấp cấu hình đường dẫn tập trung động trong `config.py`. Tất cả các script trong `src/` có khả năng tự phát hiện thư mục gốc của dự án để chạy độc lập hoặc chạy qua pipeline.
 

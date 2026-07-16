@@ -27,7 +27,7 @@ with open(md_file, 'r', encoding='utf-8') as f:
     md_content = f.read()
 
 work_style_caption = """<div style='text-align: left; background: #f8f9fa; padding: 15px; border-left: 4px solid #2980b9; margin: 10px auto; max-width: 600px; font-size: 13px; line-height: 1.6; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);'>
-    <strong style='color: #2c3e50; font-size: 14px;'>💡 Giải thích thuật ngữ (Work Style / Methodology):</strong><br/>
+    <strong style='color: #2c3e50; font-size: 14px;'>Giải thích thuật ngữ (Work Style / Methodology):</strong><br/>
     • <strong>Documentation:</strong> Kỹ năng viết, đọc hiểu và bảo trì tài liệu kỹ thuật.<br/>
     • <strong>Clean Code / SOLID:</strong> Tuân thủ các nguyên tắc viết code sạch, tối ưu, dễ đọc, dễ bảo trì.<br/>
     • <strong>Code Review:</strong> Quy trình kiểm tra chéo mã nguồn giữa các thành viên trong nhóm.<br/>

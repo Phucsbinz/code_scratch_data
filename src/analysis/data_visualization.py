@@ -445,7 +445,7 @@ if not cloud_pos_df.empty and 'cloud_tools' in locals() and not cloud_tools.empt
 print("Đang tạo Báo cáo nghiên cứu...")
 education_reqs = count_frequencies(df['education'])
 
-report_content = f"""# 🎯 Báo Cáo Nghiên Cứu: Nhu cầu Tuyển dụng & Khoảng cách Kỹ năng IT
+report_content = f"""# Báo Cáo Nghiên Cứu: Nhu cầu Tuyển dụng & Khoảng cách Kỹ năng IT
 
 ## 1. Tổng quan Nghiên cứu
 - **Mục tiêu:** Hiểu rõ nhu cầu thực tế của doanh nghiệp IT và trả lời câu hỏi "Sinh viên cần học gì và học như thế nào?"
